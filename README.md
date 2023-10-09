@@ -13,7 +13,7 @@
 ### Day 1 *(10.9.23)*
 
 #### This is My Personal Definition of Growth Mindset:
-###### **The courage to keep trying, trusting that improvement will follow.** :two_hearts:
+###### **The courage to keep trying, trusting that improvement will follow.** 
 
 #### These are the reminders that I will use to keep myself in a Growth Mindset:
 
