@@ -21,6 +21,19 @@
 ###### 2. Take a break. It's ok. 
 ###### 3. Ask for help. Be brave. 
 
+##### Assignment 01: Learning Markdown
+
+###### 1. What is Markdown?
+
+######
+   
+###### 2. Why do we use Markdown?
+###### 3. What symbol will create a heading in Markdown?
+          ###### How many do you need to create the largest heading?
+          ###### How many do you need to create the smallest heading?
+###### 5. When making text bold or italicized for emphasis, it is best practice to use which symbol?
+###### 6. How do you create a link with Markdown?
+###### 7. What are the three symbols you can use to create an unordered (bulleted) list with Markdown?
 
 
 
