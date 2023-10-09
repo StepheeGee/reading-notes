@@ -15,7 +15,7 @@
 #### This is My Personal Definition of Growth Mindset:
 ###### **The courage to keep trying, trusting that improvement will follow.** :two_hearts:
 
-#### These are the reminders I will use to keep myself in a growth mindset.
+#### These are the reminders that I will use to keep myself in a growth mindset.
 
 ###### 1. 	~~I can't do this shit.~~ Failure is a part of the learning process. You're out of your comfort zone, Stephee. And that's where you should be.
 ###### 2. Take a break. It's ok. 
