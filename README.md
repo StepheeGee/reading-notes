@@ -1,5 +1,5 @@
 
-# My Reading Notes 
+<div style="background-color: black; color: =lightgray;"> My Reading Notes </div>
 
 
 ###### Hi, I'm Steph. Welcome to the chronicles of my journey to learning code.
