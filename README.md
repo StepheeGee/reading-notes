@@ -1,6 +1,6 @@
 # My Reading Notes 
 
-<div style="background-color: black; color:white; padding: 8px;">
+<div style="background-color: black; color:lightgray; padding: 8px;">
 Hi, I'm Steph. Welcome to the chronicles of my journey to learning code.
 </div>
 
