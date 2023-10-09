@@ -1,10 +1,17 @@
 # My Reading Notes 
 
+![]()
+
 ### Class 102
 
 #### Day 1 (10.9.23)
 
 Personal Definition of Growth Mindset
+
+Reminders to keep myself in a growth mindset.
+1. Failure is a part of the learning process. You're out of your comfort zone, Stephee. And that's where you should be.
+2. 
+3.
 
 
 
