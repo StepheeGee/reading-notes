@@ -1,8 +1,8 @@
+<div style="background-color: black; color:lightgray; padding: 8px;">
 # My Reading Notes 
 
-<div style="background-color: black; color:lightgray; padding: 8px;">
+
 Hi, I'm Steph. Welcome to the chronicles of my journey to learning code.
-</div>
 
 ![overwhelmed-african-american-school-girl-doing-hom-2022-12-16-06-39-38-utc (1)](https://github.com/StepheeGee/reading-notes/assets/146587839/dfe735e7-f1dd-4567-a658-365c6b754591)
 
@@ -30,6 +30,17 @@ Hi, I'm Steph. Welcome to the chronicles of my journey to learning code.
 #### Day 4 *(10.12.23)*
 
 #### Day 5 *(10.13.23)*
+
+
+
+
+
+
+
+
+
+
+</div>
 
 
 
