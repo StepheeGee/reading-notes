@@ -1,5 +1,5 @@
 
-<div style="background-color: black; color: white; font-size: 20px; text-align: center;"> My Reading Notes </div>
+<div style="background-color: purple; color: white; font-size: 20px; text-align: center;"> My Reading Notes </div>
 
 
 ###### Hi, I'm Steph. Welcome to the chronicles of my journey to learning code.
