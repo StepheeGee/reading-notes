@@ -1,6 +1,6 @@
 # My Reading Notes 
 
-<div style="background-color: blue; padding: 10px;">
+<div style="background-color: black; color:white; padding: 8px;">
 Hi, I'm Steph. Welcome to the chronicles of my journey to learning code.
 </div>
 
@@ -10,7 +10,7 @@ Hi, I'm Steph. Welcome to the chronicles of my journey to learning code.
 
 ### Class 102
 
-#### Day 1 (10.9.23)
+#### Day 1 *(10.9.23)*
 
 ###### This is My Personal Definition of Growth Mindset:
 :two_hearts: 	**The courage to keep trying, trusting that improvement will follow.** :two_hearts:
@@ -23,13 +23,13 @@ Hi, I'm Steph. Welcome to the chronicles of my journey to learning code.
 
 
 
-#### Day 2 (10.10.23)
+#### Day 2 *(10.10.23)*
 
-#### Day 3 (10.11.23)
+#### Day 3 *(10.11.23)*
 
-#### Day 4 (10.12.23)
+#### Day 4 *(10.12.23)*
 
-#### Day 5 (10.13.23)
+#### Day 5 *(10.13.23)*
 
 
 
