@@ -16,7 +16,7 @@ Hi, I'm Steph. Welcome to the chronicles of my journey to learning code.
 :two_hearts: 	**The courage to keep trying, trusting that improvement will follow.** :two_hearts:
 
 ###### These are the reminders I will use to keep myself in a growth mindset.
-1. 	~~I can't do this shit.~~ Failure is a part of the learning process. You're out of your comfort zone, Stephee. And that's where you should be.
+1. 	~~I can't do this.~~ Failure is a part of the learning process. You're out of your comfort zone, Stephee. And that's where you should be.
 2. Take a break. It's ok. 
 3. Ask for help. Be brave. 
 
