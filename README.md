@@ -1,4 +1,3 @@
-<div style="background-color: black; color:lightgray; padding: 8px;">
 
 # My Reading Notes 
 
@@ -42,7 +41,6 @@
 
 
 
-</div>
 
 
 
