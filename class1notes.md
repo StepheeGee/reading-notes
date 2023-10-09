@@ -11,11 +11,11 @@
 
 ###### To create a heading, add one to six #
 
-##### How many do you need to create the largest heading?
+##### - How many do you need to create the largest heading?
 
 ###### One
 
-##### How many do you need to create the smallest heading?
+##### - How many do you need to create the smallest heading?
 
 ###### Six
 
