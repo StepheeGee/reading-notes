@@ -122,8 +122,10 @@
 
 ###### For example, let's say you're currently in the directory /home/user/projects/ and you execute cd ..:
 
-###### Before cd ..: /home/user/projects/
-###### After cd ..: /home/user/
+###### Before cd ..
+###### /home/user/projects/
+###### After cd ..
+###### /home/user/
 ###### After running cd .., you'll be in the /home/user/ directory, which is the parent directory of /home/user/projects/.
 
 ###### The cd .. command is useful for navigating the file system and moving up in the directory structure, allowing you to easily switch between directories and access higher-level folders.
