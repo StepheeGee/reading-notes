@@ -1,16 +1,13 @@
 
 <div style="background-color: purple; color: white; font-size: 20px; text-align: center;"> My Reading Notes </div>
 
+### Day 1 *(10.9.23)*
+
 
 ###### Hi, I'm Steph. Welcome to the chronicles of my journey to learning code.
 
 ![overwhelmed-african-american-school-girl-doing-hom-2022-12-16-06-39-38-utc (1)](https://github.com/StepheeGee/reading-notes/assets/146587839/dfe735e7-f1dd-4567-a658-365c6b754591)
 
-
-
-## Class 102
-
-### Day 1 *(10.9.23)*
 
 #### This is My Personal Definition of Growth Mindset:
 ###### **The courage to keep trying, trusting that improvement will follow.** 
