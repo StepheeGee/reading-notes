@@ -1,4 +1,4 @@
-### Learning Markdown: A Question and Answer Guide
+### Learning Markdown: A Question and Answer Guide (10.9.23)
 
 #### *Markdown is a lightweight markup language that has gained popularity due to its simplicity and ease of use in creating formatted content from plain text. It offers a straightforward way to add formatting elements to a plaintext document. Here, we'll delve into various aspects of Markdown, from its purpose to its usage in creating different elements.*
 
@@ -41,4 +41,8 @@
 
 ##### *Final Thoughts: Markdown's simplicity and versatility make it a valuable tool for creating well-structured and formatted content without the need for complex coding. Whether you're a beginner or an experienced writer, Markdown can enhance your writing and presentation capabilities. Good luck!*
 
+### Resources
+#### https://www.markdownguide.org/getting-started/
+#### https://www.markdownguide.org/basic-syntax/
+#### https://guides.github.com/features/mastering-markdown/
 
