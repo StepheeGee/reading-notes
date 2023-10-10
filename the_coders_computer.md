@@ -1,5 +1,4 @@
 ## The Coder's Computer
-
 ##### *Here we will have a Question and Answer discussion that describes the benefits of using a text editor, and the importance of certain commands that can be executed in your computer's terminal. Let's go...*
 
 ### **First, let's briefly discuss what a text editor is.** 
