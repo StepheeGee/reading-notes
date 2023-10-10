@@ -66,7 +66,7 @@
 
 ###### The touch command in the terminal is used to create a new, empty file. If the file already exists, running touch will update the file's modification timestamp without modifying the content. The touch command is useful when you need to quickly create a new file or update a file's modification timestamp.
   
-#### Let's explain what is happening in the following scenario if these commands and arguments are entered into the command line? (Arguments are extra instructions given to a command.)
+#### Let's explain what is happening in the following scenario if these commands and arguments are entered into the command line. (Arguments are extra instructions given to a command.)
 
 + ##### cd projects
 
