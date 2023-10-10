@@ -25,8 +25,8 @@
 
 ###### Example:
 
-###### Italicized Text: *Italicized Text*
-###### Bold Text: **Bold Text**
+###### Italicized Text: * Italicized Text * (remove spacing for success)
+###### Bold Text: ** Bold Text ** (remove spacing for success)
 
 ##### 5. How do you create a link with Markdown?
 
