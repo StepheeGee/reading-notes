@@ -9,7 +9,7 @@
 ##### 2. Why do we use Markdown?
 ###### Because...
 > ###### Markdown finds extensive use across various domains. It's versatile and can be employed for creating websites, documents, notes, books, presentations, email messages, and technical documentation. Its simplicity and readability make it a preferred choice for many writers and developers.
-> 
+
 ##### 3. What symbol will create a heading in Markdown?
 
 ###### To create a heading in Markdown, you simply prepend one to six hash symbols (#) before the text. The number of hash symbols determines the heading level. To create the largest heading, use a single hash symbol, and to create the smallest heading, use six hash symbols.
