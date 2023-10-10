@@ -119,7 +119,8 @@
 
 ###### Change to Parent Directory:
 ###### The cd .. command instructs the system to change the current directory to the parent directory of the current location.
-For example, let's say you're currently in the directory /home/user/projects/ and you execute cd ..:
+
+###### For example, let's say you're currently in the directory /home/user/projects/ and you execute cd ..:
 
 ###### Before cd ..: /home/user/projects/
 ###### After cd ..: /home/user/
