@@ -129,5 +129,17 @@ For example, let's say you're currently in the directory /home/user/projects/ an
 
 + ##### ls projects/new-project
 
+###### The ls projects/new-project command in the terminal will list the files and directories within the "new-project" directory, assuming the "new-project" directory exists within the "projects" directory.
+
+###### Here's what will typically happen:
+
+###### If "projects" and "new-project" directories exist:
+###### If both the "projects" and "new-project" directories exist, the ls command will list the contents (files and directories) within the "new-project" directory.
+
+###### If "projects" or "new-project" directories do not exist:
+###### If either the "projects" or "new-project" directory does not exist, the ls command will display an error message indicating that the specified path is invalid or that the directory does not exist.
+
+###### In summary, running ls projects/new-project will list the contents of the "new-project" directory within the "projects" directory if both directories exist. If either directory does not exist, the ls command will return an error indicating that the specified path is invalid.
+
 
 #### **Now go forth, and try not to break your computer.** 
