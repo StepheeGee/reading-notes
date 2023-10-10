@@ -1,7 +1,7 @@
 
 <div style="background-color: purple; color: white; font-size: 20px; text-align: center;"> My Reading Notes </div>
 
-### Day 1 *(10.9.23)*
+###### Day 1 *(10.9.23)*
 
 
 ###### Hi, I'm Steph. Welcome to the chronicles of my journey to learning code.
