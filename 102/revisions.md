@@ -4,9 +4,9 @@
 
 ![Alt text](outdoor-shot-of-blue-sky-and-clouds-and-sun-behind-2022-08-18-06-04-31-utc.JPG)
 
-### What is Version Control?'
+### What is Version Control?
 
-#### Version control, also known as source control or revision control, is a system or software that tracks changes to files and directories over time. It helps manage and organize different versions of a project or set of files, enabling collaboration among multiple contributors and facilitating the tracking of changes, additions, and deletions made to the project.*
+#### Version control, also known as source control or revision control, is a system or software that tracks changes to files and directories over time. It helps manage and organize different versions of a project or set of files, enabling collaboration among multiple contributors and facilitating the tracking of changes, additions, and deletions made to the project.
 
 *Key features and purposes of version control systems (VCS) include:*
 
