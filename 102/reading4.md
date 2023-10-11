@@ -85,14 +85,15 @@ In contrast, non-semantic or generic elements (e.g., < div >, < span >) do not c
 
 Sources:
 
-+ https://careerfoundry.com/en/blog/ux-design/how-to-create-your-first-wireframe
 
-+ https://balsamiq.com/learn/courses/intro-to-ui-design/what-is-ui-design
++ [Link 1](https://balsamiq.com/learn/courses/intro-to-ui-design/what-is-ui-design)
 
-+ https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics
++ [Link 2](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
 
-+ https://developer.mozilla.org/en-US/docs/Glossary/Semantics
++ [Link 3](https://developer.mozilla.org/en-US/docs/Glossary/Semantics)
 
-+ https://developer.mozilla.org/en-US/docs/Web/HTML
++ [Link 4](https://developer.mozilla.org/en-US/docs/Web/HTML)
 
-+ https://developer.mozilla.org/en-US/docs/Web/HTML/Element
++ [Link 5](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+
++ [Link 6](https://careerfoundry.com/en/blog/ux-design/how-to-create-your-first-wireframe)
