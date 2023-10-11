@@ -62,14 +62,6 @@ git add .          # Track all changes in the current directory.
 To Stage Files:
 The files added using git add are staged, which means they are ready to be included in the next commit. To commit these changes to the repository and create a new version of your project, you use the git commit command.
 
-To Stage Files:
-The files added using git add are staged, which means they are ready to be included in the next commit. To commit these changes to the repository and create a new version of your project, you use the git commit command.
-
-git commit -m "Your commit message"   # Commit staged changes with a message
-
-This command stages all files previously added using git add and permanently saves them in the repository with the provided commit message.
-
-By using these commands (git add and git commit), you can track new or modified files, stage them for the next commit, and then commit them to the Git repository, effectively saving a new version of your project. This process is fundamental in using Git for version control and collaborative development.
 
 ### What is the command to take a snapshot of your changed files?
 
@@ -87,6 +79,9 @@ When you run this command, Git creates a new commit with the files you've staged
 After committing, you've effectively taken a snapshot of your project with the changes you staged and documented the changes in the commit message. This snapshot becomes a part of your project's history and can be referred to or reverted to at any time.
 
 ### What is the command to send your changed files to Github?
+
+
+The "push" command in the context of GitHub refers to using Git commands, specifically git push, to upload your local repository's commits and changes to a remote repository hosted on GitHub. GitHub provides a platform to host and manage Git repositories, making it easier to collaborate with others and manage version control.
 
 Sources: https://blog.udemy.com/git-tutorial-a-comprehensive-guide/
 
