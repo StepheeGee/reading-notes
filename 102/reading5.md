@@ -6,7 +6,7 @@
 
 #### In simple terms...
 
-##### *CSS, or Cascading Style Sheets, is like the makeup for a website. It lets designers choose how a website looks (presentation and style)- things like colors, fonts, spacing, and layouts. It keeps the design separate from the words and structure, which makes it easier to change how things look without changing the content itself.*
+##### *CSS, or Cascading Style Sheets, is like the makeup for a website. At least that's an analogy that a TA gave me when I asked. It lets designers choose how a website looks (presentation and style)- things like colors, fonts, spacing, and layouts. It keeps the design separate from the words and structure, which makes it easier to change how things look without changing the content itself.*
 
 Here's why this is important:
 
