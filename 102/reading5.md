@@ -4,6 +4,8 @@
 
 ### What is the purpose of CSS?
 
+Cascading Style Sheets - a declarative syntax for defining the presentation of a web pages.
+
 #### In simple terms...
 
 ##### *CSS, or Cascading Style Sheets, is like the makeup for a website. At least that's an analogy that a TA gave me when I asked. It lets designers choose how a website looks (presentation and style)- things like colors, fonts, spacing, and layouts. It keeps the design separate from the words and structure, which makes it easier to change how things look without changing the content itself.*
@@ -41,7 +43,7 @@ p {
   color: red;
 }
 
-This CSS rule selects all < p > elements and applies the color property, changing it to red. And as a result, all paragraphs on the webpage will have red text. You can place this CSS rule in your external CSS file or within a < styl e> block in the < head > section of your HTML file.
+This CSS rule selects all < p > elements and applies the color property, changing it to red. And as a result, all paragraphs on the webpage will have red text. You can place this CSS rule in your external CSS file or within a < style > block in the < head > section of your HTML file.
 
 
 
