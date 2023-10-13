@@ -45,7 +45,9 @@ p {
 
 This CSS rule selects all < p > elements and applies the color property, changing it to red. And as a result, all paragraphs on the webpage will have red text. You can place this CSS rule in your external CSS file or within a < style > block in the < head > section of your HTML file.
 
+With that said....it's gonna be a long night.
 
+![study](study.jpg)
 
 ##### Sources:
 * https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS

@@ -1,5 +1,9 @@
 ### Programming with JavaScript
 
+10.12.23
+
+![JS](scramble.jpg)
+
 ### What is control flow?
 
 By default, JavaScript code is executed from top to bottom, line by line. We can change that with Control Flow.
@@ -55,3 +59,4 @@ Sources
 
 [Skim about Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
 
+![JS](scramble.jpg)
