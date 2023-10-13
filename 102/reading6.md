@@ -21,6 +21,8 @@ The assignment operator (=) in JavaScript is used to assign a value to a variabl
 
 #### Information Received from the User:
 
+Thanks to my TA Stephen - I now know the correct answer is - "input" or "data". 
+
 The prompt() function.
 
 The information received from the user in JavaScript is typically obtained using the prompt() function, which displays a dialog box prompting the user to input text. The value entered by the user can then be stored in a variable for further use.
