@@ -89,4 +89,29 @@ let y=10
 // { console.log('not it is not');}
 
 
+/* function userDetox() {
+  let detoxQuestion = prompt('Do you want to join our detox challenge? Answer yes or no.');
+  let detoxAnswer = detoxQuestion.toLowerCase();
+
+  // First test case
+  if (detoxAnswer == 'yes') {
+      let email = prompt('Enter your email address');
+      return(email);
+  // Second test case if first test case is false
+  } else if (detoxAnswer == 'no') {
+      let secondAnswer = prompt('Are you sure? Answer yes or no.');
+      // Second.5 test case if second case is true
+      if (secondAnswer == 'yes') {
+          let phoneNumber = prompt('Enter your phone number');
+          return(phoneNumber);
+      };
+  // If none of the test cases are true, then run this. Last resort.
+  } else {
+      return('Thanks for coming to our page');
+  }
+}
+
+let returnStatement = userDetox();
+
+console.log(returnStatement);
 

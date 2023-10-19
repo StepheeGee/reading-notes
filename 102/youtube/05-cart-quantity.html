@@ -12,7 +12,7 @@
       ">Show Quantity</button>
 
     <button onclick="
-      cartQuantity = cartQuantity + 1;
+      cartQuantity = cartQuantity ++;
       //cartQuantity ++; this is a shortcut for adding 1
       console.log(`Cart quantity: ${cartQuantity}`
       );
@@ -20,7 +20,7 @@
 
 
     <button onclick="
-      cartQuantity = cartQuantity + 2;
+      cartQuantity = cartQuantity += 2;
       //cartQuantity += 2; this is shortcut 
       console.log(`Cart quantity: ${cartQuantity}`
       );
@@ -36,15 +36,12 @@
       cartQuantity = 0;
       console.log('Cart was reset.');
       console.log(`Cart quantity: ${cartQuantity}`);
-      ">Reset Cart</button>;
+      ">Reset Cart</button>
 
+  <script>
 
-    console.log(typeof variable2);
-    console.log(typeof message);
-
-    <script>
-      let cartQuantity = 0;
-    </script>
+    let cartQuantity = 0;
+  </script>
   </body>
 </html>
 

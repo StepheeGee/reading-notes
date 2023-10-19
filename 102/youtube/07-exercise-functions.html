@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Function Practice</title>
+</head>
+<body>
+
+
+
+  <script>
+ 
+
+
+
+
+    /*
+    function greet(name) {
+      if (!name) {
+        console.log('Hi there!');
+      } else {
+        console.log(`Hello ${name}!`);
+      }
+    }
+
+
+greet('Steph');*/
+
+
+/*
+
+function convertToFahrenheit(celsius){
+  return(((celsius * 9)/5)+32);
+}
+
+console.log(convertToFahrenheit(25));
+
+function convertToCelsius(fahrenheit){
+  return(((fahrenheit-32) * 5)/9);
+
+
+}
+console.log(convertToCelsius(86));
+*/
+
+
+/* Wrong solution for 7f WHAT THE FUCKKKKK
+function convertTemperatures(degree,unit){
+  if (unit === 'C'){
+    return (C * 9/5)+32F;
+  } else if (unit === 'F'){
+    return(((F-32) * 5)/9);
+  }
+}
+
+convertTemperatures(49C); */
+
+
+/* Correct solution to 7f
+  function convertToFahrenheit(celsius) {
+    return (celsius * 9 / 5) + 32;
+  }
+
+  function convertToCelsius(fahrenheit) {
+    return (fahrenheit - 32) * 5 / 9;
+  }
+
+  function convertTemperature(degrees, unit) {
+    if (unit === 'C') {
+      const result = convertToFahrenheit(degrees);
+      return `${result}F`;
+    } else if (unit === 'F') {
+      const result = convertToCelsius(degrees);
+      return `${result}C`;
+    }
+  }
+
+      console.log(convertTemperature(25, 'C'));
+      console.log(convertTemperature(86, 'F'));
+/*
+
+
+Ex:
+Write a JavaScript function called reverseString 
+that reverses a given string. The function should 
+take a string as a parameter and return the reversed
+ string.
+
+Write the function and a usage example. 
+Please provide your own implementation for 
+the reverseString function.
+
+Solution:
+function reverseString(str) {
+  return str.split('').reverse().join('');
+}
+
+const originalString = "hello";
+const reversedString = reverseString(originalString);
+console.log('Reversed string:', reversedString);
+
+In this solution, we're using the split('') method
+ to split the string into an array of characters, 
+ then reverse() to reverse the array, and finally join('') to join the reversed array back into a string. This effectively reverses the given string.
+
+
+*/
+
+/* Exercise:
+Write a JavaScript function called calculateTotal that takes three parameters: num1, num2, and operator. The function should perform the arithmetic operation based on the provided operator and return the result.
+
+Supported operators:
+
+Addition (+)
+Subtraction (-)
+Multiplication (*)
+Division (/)
+function calculateTotal (num1, num2, operator){
+
+  if (operator === '+'){
+    return num1 + num2;
+  } else if (operator === '-'){
+    return num1 - num2;
+  } else if (operator === '/'){
+    return num1 / num2;
+  } else if (operator === '*'){
+    return num1 * num2;
+  }
+}
+
+ console.log(calculateTotal(5, 5, '/')); */
+/*
+ Exercise:
+Write a JavaScript function called isEven that takes an integer as a parameter and returns true if the number is even and false if it's odd.
+
+Write the function and a usage example.
+
+ solution
+
+ function isEven(number) {
+  return number % 2 === 0;
+}
+
+const num1 = 10;
+const num2 = 7;
+
+console.log(isEven(num1)); // Should return true
+console.log(isEven(num2)); // Should return false
+
+ 
+ The modulo operator, represented by the symbol %, is a mathematical operator used in programming and mathematics to find the remainder when one number is divided by another. In JavaScript and many other programming languages, it works as follows:
+
+a % b calculates the remainder when a is divided by b.
+Here are a couple of examples to illustrate how the modulo operator works:
+
+Even and Odd Numbers:
+
+When you use the modulo operator with 2, it's often used to determine whether a number is even or odd.
+If a % 2 equals 0, then a is an even number.
+If a % 2 equals 1, then a is an odd number.
+*/
+
+/* Exercise:
+
+Write a JavaScript function called findMax that takes an array of numbers as a parameter and returns the maximum (largest) number in the array.
+
+Write the function and a usage example.
+
+
+function findMax(numbers) {
+  return 
+}
+
+const numbers = [20, 5, 15, 30, 10];
+
+console.log(findMax(numbers));
+
+
+Solution:
+
+function findMax(numbers) {
+  if (numbers.length === 0) {
+    // Handle the case of an empty array (you can choose to return something specific or handle it differently)
+    return undefined;
+  }
+
+  let max = numbers[0]; // Assume the first number is the maximum
+
+  for (let i = 1; i < numbers.length; i++) {
+    if (numbers[i] > max) {
+      max = numbers[i]; // Update max if a larger number is found
+    }
+  }
+
+  return max;
+}
+
+const numbers = [20, 5, 15, 30, 10];
+const maxNumber = findMax(numbers);
+
+console.log('The maximum number is:', maxNumber);
+
+Accessing Array Elements: You use square 
+brackets to access specific elements within 
+an array by specifying the index (position) 
+of the element you want to retrieve. Array 
+indices start from 0.
+*/
+
+/*
+ex: Write a JavaScript function called isEven that takes an integer as a parameter and returns a message indicating whether the number is even or odd. If the number is even, it should return "The number is even." If the number is odd, it should return "The number is odd."
+
+Write the function and a usage example.
+// Your implementation of the isEven function here
+function isEven(number) {
+  // Your solution here
+}
+
+const num = 8;
+const result = isEven(num);
+
+if (result) {
+  console.log(result);
+}
+
+ANSWER
+function isEven(number) {
+  if (number % 2 === 0) {
+    return "The number is even.";
+  } else {
+    return "The number is odd.";
+  }
+}
+
+const num = 8;
+const result = isEven(num);
+console.log(result);
+*/
+
+
+
+
+  </script>
+</body>
+</html>
