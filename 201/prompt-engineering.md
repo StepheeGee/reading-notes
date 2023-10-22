@@ -1,4 +1,5 @@
 ## Classroom Genius: Don't Cheat; Use AI 
+
 10.19.23
 
 ![AI photo](photos/AI_photo.jpg)
