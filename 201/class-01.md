@@ -125,8 +125,6 @@ Sources:
 
 ### Section II: Intro to HTML
 
-Sure, let's break down your questions:
-
 **A. What is an HTML attribute?**
    - An HTML attribute is a property or characteristic that provides additional information about an HTML element. Attributes are used to modify, configure, or provide metadata for elements. They are always specified in the opening tag of an element, using the attribute name followed by an equal sign and the attribute value enclosed in double or single quotes. Attributes allow you to control how an element behaves or to supply extra information. For example, the `src` attribute in an `<img>` tag specifies the image source file.
 
@@ -217,8 +215,7 @@ The benefits of using semantic tags in HTML, in general, include:
 
 2. **Enhanced Accessibility:** Semantic tags are essential for creating accessible web content. They provide a clear structure that can be interpreted by assistive technologies, making your website more inclusive for users with disabilities.
 
-3. **Maintainability:** Semantic HTML makes your code more organized and easier to maintain. It enhances code readability and allows developers to quickly grasp the structure and purpose of different elements.
-Finding blocks of meaningful code is significantly easier than searching through endless divs with or without semantic or namespaced classes.
+3. **Organization:** Semantic HTML makes your code more organized and easier to maintain. It enhances code readability and allows developers to quickly grasp the structure and purpose of different elements.Finding blocks of meaningful code is significantly easier than searching through endless divs with or without semantic or namespaced classes.
 
 4. **Consistency:** Semantic tags help create consistent and standardized web content, making it easier for different browsers and devices to render your webpages correctly.
 
