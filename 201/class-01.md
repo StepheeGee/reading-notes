@@ -1,6 +1,6 @@
 # Class One
 
-## Reading
+## Reading Notes
 10.23.23
 
 The key emphasis, of this assignment, is on understanding the core concepts and knowing how to locate examples within the text. Essentially, the goal of the assignment is to become proficient in efficient reading and comprehension.
