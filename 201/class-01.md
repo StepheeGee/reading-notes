@@ -246,3 +246,5 @@ Two common use cases that require JavaScript in the browser are:
 
 Source:
 [Mozilla on JavaScript First Steps](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
+
+## Things I want to know more about
