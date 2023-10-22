@@ -8,3 +8,6 @@ The key emphasis, of this assignment, is on
 
 
 ![Three](photos/three.jpg)
+
+## Things I want to know more about
+![Books](photos/Books.jpg)
