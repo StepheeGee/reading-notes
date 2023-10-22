@@ -88,7 +88,7 @@ In JavaScript, you can create both strings and numbers in various ways. Here's h
 3. **Using Number Constructors:** You can create numbers using the `Number()` constructor.
 
 
-#### E. What is a Variable and why are they important in JavaScript?
+#### **E. What is a Variable and why are they important in JavaScript?**
 
 Variables are named containers that store values. In JavaScript, variables are created using the `let`, `const`, or `var` keyword, followed by a variable name.
 
