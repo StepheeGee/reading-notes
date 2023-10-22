@@ -6,9 +6,9 @@
 The key emphasis, of this assignment, is on understanding the core concepts and knowing how to locate examples within the text. Essentially, the goal of the assignment is to become proficient in efficient reading and comprehension.
 ![One](photos/one.jpg)
 
-### Getting Started
+### Section I: Getting Started
 
-#### Compose a short poem describing how HTTP sends data between computers.
+#### **A. Compose a short poem describing how HTTP sends data between computers.**
 
 *This is not an original poem. It's ChatGPT generated.*
 
@@ -34,7 +34,7 @@ The key emphasis, of this assignment, is on understanding the core concepts and 
 
 
 
-#### Describe how HTML, CSS, and JS files are “parsed” in the browser.
+#### **B. Describe how HTML, CSS, and JS files are “parsed” in the browser.**
 
 In a web browser, HTML, CSS, and JavaScript files are parsed in distinct ways as part of the process that ultimately renders a webpage. Here's a brief overview of how each of these file types is parsed:
 
@@ -56,11 +56,12 @@ In a web browser, HTML, CSS, and JavaScript files are parsed in distinct ways as
    - During this process, it interacts with the DOM and the Render Tree, allowing dynamic and interactive behavior.
    - JavaScript can make further requests to fetch additional resources, update the DOM, or change styles.
 
-The parsing process can be asynchronous, especially for JavaScript and external resources, as web pages often include various assets like images, fonts, and more. 
+   The parsing process can be asynchronous, especially for JavaScript and external resources, as web pages often include various assets like images, fonts, and more. 
 
-The parsing of HTML, CSS, and JavaScript is typically fast and parallelized in modern browsers to ensure efficient loading and rendering of web pages.
+   The parsing of HTML, CSS, and JavaScript is typically fast and parallelized in modern browsers to ensure efficient loading and rendering of web pages.
 
-#### How can you find images to add to a Website?
+
+#### **C. How can you find images to add to a Website?**
 
 1. To select an image, visit Google Images and find an image that you like. 
 
@@ -70,7 +71,7 @@ The parsing of HTML, CSS, and JavaScript is typically fast and parallelized in m
 
 4. Please be aware that many images on the web, including those on Google Images, are protected by copyright. To lower the risk of infringing on copyrights, you can use Google's license filter. Click on the "Tools" button and then select "Usage rights" from the resulting options below. Opt for "Creative Commons licenses" as your choice.
 
-#### How do you create a String vs a Number in JavaScript?
+#### **D. How do you create a String vs a Number in JavaScript?**
 
 In JavaScript, you can create both strings and numbers in various ways. Here's how you can create them:
 
@@ -87,7 +88,7 @@ In JavaScript, you can create both strings and numbers in various ways. Here's h
 3. **Using Number Constructors:** You can create numbers using the `Number()` constructor.
 
 
-#### What is a Variable and why are they important in JavaScript?
+#### E. What is a Variable and why are they important in JavaScript?
 
 Variables are named containers that store values. In JavaScript, variables are created using the `let`, `const`, or `var` keyword, followed by a variable name.
 
@@ -122,14 +123,14 @@ Sources:
 [Website Design and Process](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like)
 
 
-### Intro to HTML
+### Section II: Intro to HTML
 
 Sure, let's break down your questions:
 
-**1. What is an HTML attribute?**
+**A. What is an HTML attribute?**
    - An HTML attribute is a property or characteristic that provides additional information about an HTML element. Attributes are used to modify, configure, or provide metadata for elements. They are always specified in the opening tag of an element, using the attribute name followed by an equal sign and the attribute value enclosed in double or single quotes. Attributes allow you to control how an element behaves or to supply extra information. For example, the `src` attribute in an `<img>` tag specifies the image source file.
 
-**2. Describe the Anatomy of an HTML element:**
+**B. Describe the Anatomy of an HTML element:**
    - An HTML element consists of the following parts:
      - **Opening Tag:** This is the first part of an element and specifies the type of element it is. It is enclosed in angle brackets, e.g., `<element>`.
      - **Attributes:** Some elements have attributes that provide additional information about the element. Attributes are optional but can affect the element's behavior or appearance.
@@ -137,12 +138,12 @@ Sure, let's break down your questions:
      - **Closing Tag:** For most elements, there is a closing tag that is identical to the opening tag but includes a forward slash before the element name, e.g., `</element>`.
      - **Self-Closing Tags:** Some elements, like `<img>` and `<br>`, don't have a closing tag and are self-closed with a forward slash before the closing angle bracket, e.g., `<img />`.
 
-**3. Difference between `<article>` and `<section>` element tags:**
+**C. Difference between `<article>` and `<section>` element tags:**
    - `<article>` and `<section>` are both HTML5 structural elements used for organizing content on a web page, but they serve different purposes:
      - `<article>`: This element is used to define a self-contained, independently distributable content piece. It represents content that could stand alone and still make sense. Examples include blog posts, news articles, or forum posts.
      - `<section>`: The `<section>` element is used to group related content together. It doesn't have to make sense when taken out of context and doesn't necessarily imply that the content is a standalone article. It's more for structuring content within a page or document.
 
-**4. Elements included in a "typical" website:**
+**D. Elements included in a "typical" website:**
    - A typical website can include a wide range of HTML elements depending on its purpose. Some common elements include:
      - `<html>`: The root element that wraps all content.
      - `<head>`: Contains metadata and links to external resources.
@@ -155,14 +156,14 @@ Sure, let's break down your questions:
      - `<div>`: A generic container for grouping content.
      - `<p>`, `<h1>`, `<ul>`, `<ol>`, `<li>`, `<a>`, `<img>`, and more: Elements for creating text, lists, links, images, and other content.
 
-**5. How does metadata influence Search Engine Optimization (SEO)?**
+**E. How does metadata influence Search Engine Optimization (SEO)?**
    - Metadata, such as the `<meta>` tags in the `<head>` section of an HTML document, provides information about the content of a webpage. Metadata influences SEO in several ways:
      - **Title Tags**: The `<title>` tag provides the title of the webpage displayed in search engine results. A well-optimized title tag can improve click-through rates.
      - **Meta Descriptions**: The `<meta name="description">` tag provides a brief description of the page's content. A compelling and relevant meta description can encourage users to click on your page in search results.
      - **Keywords**: While not as influential as in the past, keywords specified in the `<meta name="keywords">` tag can still be used by some search engines.
      - **Other Meta Tags**: Various other meta tags can provide information about character encoding, authorship, and more, which can indirectly impact SEO.
 
-**6. How is the meta HTML tag used when specifying metadata?**
+**F. How is the meta HTML tag used when specifying metadata?**
    - The `<meta>` tag is used in the `<head>` section of an HTML document to specify metadata. It typically includes an attribute `name` or `property` to indicate the type of metadata and a `content` attribute to provide the actual content or value. 
    The `charset` attribute ensures that the browser interprets the text correctly, and the `description` meta tag provides a concise description for search engines.
 
@@ -175,28 +176,28 @@ Sources:
 [Metadata in HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML)
 
 
-### Miscellaneous
+### Section III: Miscellaneous
 
-#### How to start to design a Website:
+#### **A. How to start to design a Website:**
 
 #### What is the first step to designing a Website?
 
-To design a website effectively, the first step is **project ideation**, during which you need to address several essential questions:
+    To design a website effectively, the first step is project ideation, during which you need to address several essential questions:
 
-1. What exactly do I want to accomplish?
-2. How will a website help me reach my goals?
-3. What needs to be done, and in what order, to reach my goals?
+   1. What exactly do I want to accomplish?
+   2. How will a website help me reach my goals?
+   3. What needs to be done, and in what order, to reach my goals?
 
 #### What is the most important question to answer when designing a Website?
 
-The most important question to answer during website design is the first one: "What exactly do I want to accomplish?" The answer to this question, indicate your goals. Your goals set the direction and purpose of the website, influencing all other design decisions. Without a clear understanding of your goals, it's challenging to create a website that effectively fulfills your intentions and serves its intended audience.
+      The most important question to answer during website design is the first one: "What exactly do I want to accomplish?" The answer to this question, indicate your goals. Your goals set the direction and purpose of the website, influencing all other design decisions. Without a clear understanding of your goals, it's challenging to create a website that effectively fulfills your intentions and serves its intended audience.
 
 Note: List and prioritize your goals.
 
 Source:
 [Design Website Info](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Thinking_before_coding)
 
-#### Semantics
+#### **B. HTML - Semantics**
 
 #### Why should you use an h1 element over a span element to display a top level heading?
 
@@ -226,9 +227,10 @@ Finding blocks of meaningful code is significantly easier than searching through
 Source:
 [Mozilla on Semantics](https://developer.mozilla.org/en-US/docs/Glossary/Semantics)
 
-#### What is JavaScript
+#### **C. Miscellaneous JavaScript**
 
-#### JavaScript in the browser is essential for enhancing web interactivity and functionality. 
+#### What is JavaScript?
+JavaScript in the browser is essential for enhancing web interactivity and functionality. 
 
 Two common use cases that require JavaScript in the browser are:
 
