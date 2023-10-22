@@ -1,10 +1,10 @@
 # Class One
 
 ## Reading
+10.23.23
 
 The key emphasis, of this assignment, is on understanding the core concepts and knowing how to locate examples within the text. Essentially, the goal of the assignment is to become proficient in efficient reading and comprehension.
-
-![Books](photos/Books.jpg)
+![One](photos/one.jpg)
 
 ### Getting Started
 
@@ -248,3 +248,4 @@ Source:
 [Mozilla on JavaScript First Steps](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
 
 ## Things I want to know more about
+![Books](photos/Books.jpg)
