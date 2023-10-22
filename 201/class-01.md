@@ -1,6 +1,6 @@
 # Class One
 
-10.23.23
+10.22.23
 
 *The key emphasis, of this assignment, is on understanding the core concepts and knowing how to locate examples within the text. Essentially, the goal of the assignment is to become proficient in efficient reading and comprehension.*
 ![One](photos/one.jpg)
@@ -225,8 +225,8 @@ Source:
 
 #### **C. Miscellaneous JavaScript**
 
-#### What is JavaScript?
-JavaScript in the browser is essential for enhancing web interactivity and functionality. 
+#### **Describe 2 things that require JavaScript in the Browser?**
+
 
 Two common use cases that require JavaScript in the browser are:
 
@@ -234,16 +234,18 @@ Two common use cases that require JavaScript in the browser are:
 
 2. **Dynamic Web Content:** JavaScript enables dynamic changes to web content without requiring a full page reload. This can include interactive features like image sliders, pop-up modals, expanding and collapsing sections, and dynamic data updates from web servers. JavaScript allows web pages to respond to user actions or data changes, creating a more engaging user experience.
 
-#### To add JavaScript to an HTML document, you have several options:
+#### **How can you add JavaScript to an HTML document?**
+
+To add JavaScript to an HTML document, you have several options:
 
 1. **Inline Script:** You can include JavaScript directly within an HTML document using the `<script>` element. Place the JavaScript code between the opening `<script>` tag and the closing `</script>` tag in the HTML document's `<head>` or `<body>` section.
 
-2. **External Script:** You can link to an external JavaScript file using the `<script>` element's `src` attribute. This is the preferred method for larger JavaScript codebases, as it promotes code separation and reusability.
+2. **External Script:** You can link to an external JavaScript file using the `<script>` element's `src` attribute. 
 
 3. **Event Listeners:** You can use JavaScript to attach event listeners to HTML elements, specifying what should happen when certain events occur. This allows you to keep your JavaScript separate from your HTML and create more interactive and responsive web applications.
 
 Source:
-[Mozilla on JavaScript First Steps](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
+[Mozilla on JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
 
 ## Things I want to know more about
 ![Books](photos/Books.jpg)
