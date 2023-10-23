@@ -1,4 +1,5 @@
-# JavaScript Loop--Dee--Loop
+# JavaScript
+## Operators and Loops
 
  10.12.23
 
