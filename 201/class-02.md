@@ -119,7 +119,7 @@ Source:
 
   2. **Comparison Operators**: These operators are used to compare values. Examples include equality (== or ===), inequality (!= or !==), and greater than (>).
 
-  3. **Logical Operators**: Logical operators are used to combine or modify conditions. Examples include && (logical AND), || (logical OR), and ! (logical NOT).
+  3. **Logical Operators**: Logical operators are used to combine or modify conditions.  Examples include `&& (logical AND)`, `|| (logical OR)`, and `! (logical NOT)`.
 
   4. **Assignment Operators**: These operators assign values to variables. Examples include = (assignment), += (add and assign), and -= (subtract and assign).
 
