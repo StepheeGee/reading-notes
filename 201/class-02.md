@@ -124,7 +124,8 @@ Source:
   4. **Assignment Operators**: These operators assign values to variables. Examples include = (assignment), += (add and assign), and -= (subtract and assign).
 
 **Describe a real world Problem you could solve with a Function.**
-- A real-world problem would be calculating the total cost of items in a shopping cart, including applying discounts and taxes. You can create a JavaScript function, let's call it `calculateTotalCost`, that takes inputs like item prices, quantities, discount codes, and tax rates. This function can apply discounts based on the provided codes, calculate the subtotal, and then add the applicable tax to determine the total cost. 
+- A real-world problem would be calculating the total cost of items in a shopping cart, including applying discounts and taxes. You can create a JavaScript function, let's call it `calculateTotalCost`, that takes inputs like item prices, quantities, and tax rates. It can calculate the subtotal, and then add the applicable tax to determine the total cost.
+But don't ask me to do it just yet. Because I do not know how. I saw a tutorial on youtube that demonstrated it.  
 
 ### Conditionals 
 
@@ -146,13 +147,13 @@ Source:
 
   3. **Greater Than (>) and Less Than (<)**: These operators compare if one value is greater or less than another value. For example, `15 > 5` is true, and `7 < 2` is false.
 
-**What is the difference between the logical operator && and ||?**
+**What is the difference between the logical operator `&&` and `||`?**
 
-- The logical operators "&&" (logical AND) and "||" (logical OR) are used to combine conditions. The main differences are as follows:
+- The logical operators `&&` (logical AND) and `||` (logical OR) are used to combine conditions. The main differences are as follows:
 
-  - **&& (logical AND)**: Returns true if both conditions on its left and right sides are true. If either condition is false, the result is false. For example, `true && false` is false.
+  - **`&&` (logical AND)**: Returns true if both conditions on its left and right sides are true. If either condition is false, the result is false. For example, `true && false` is false.
 
-  - **|| (logical OR)**: Returns true if at least one of the conditions on its left or right side is true. It's true even if just one condition is true. If both conditions are false, the result is false. For instance, `true || false` is true.
+  - **`||` (logical OR)**: Returns true if at least one of the conditions on its left or right side is true. It's true even if just one condition is true. If both conditions are false, the result is false. For instance, `true || false` is true.
 
 Sources:
 
