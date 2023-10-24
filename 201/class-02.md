@@ -28,7 +28,7 @@ Using semantic elements in HTML is crucial for several reasons:
 There are six levels of headings. 
 They are denoted by `<h1>` through `<h6>`. `<h1>` represents the highest level, and `<h6>` is the lowest.
 
-### What are some uses for the <sup> and <sub> elements?
+### What are some uses for the `<sup>` and `<sub>` elements?
 
 The `<sup>` and `<sub>` elements are used for defining superscript and subscript text, respectively.
 
