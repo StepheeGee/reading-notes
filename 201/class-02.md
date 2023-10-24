@@ -1,20 +1,21 @@
-# Class Two
+# Introduction to Web Development
 
-## Reading
-10.24.23
+Class Two: 10.24.23
 
-The key emphasis of this assignment is to understand the fundamentals of HTML, CSS, and JS. HTML (Hypertext Markup Language) is the backbone of web content, providing structure and semantics. CSS (Cascading Style Sheets) controls the presentation and layout, making web content visually appealing. JavaScript adds interactivity and dynamic behavior. Together, these technologies form the foundation of web development.
+Assignment Prepared: 10.23.23
+
+*The key emphasis of this assignment is to understand the fundamentals of HTML, CSS, and JS. HTML (Hypertext Markup Language) is the backbone of web content, providing structure and semantics. CSS (Cascading Style Sheets) controls the presentation and layout, making web content visually appealing. JavaScript adds interactivity and dynamic behavior. Together, these technologies form the foundation of web development.*
 ![Two](photos/two.jpg)
 
-### HTML Fundamentals
+## HTML Fundamentals
 
-#### Why is it important to use semantic elements in our HTML?
+### Why is it important to use semantic elements in our HTML?
 
 Using semantic elements in HTML is crucial for several reasons:
 
-1. **Clarity and Readability:** Semantic elements provide a clear and meaningful structure to web documents. They convey the intended purpose of the content, making it easier for both developers and screen readers to understand the page's structure and content.
+1. **Clarity and Readability:** Semantic elements provide a clear and meaningful structure to web documents. It makes it easier for other developer's to read the content and structure. 
 
-2. **Search Engine Optimization (SEO):** Search engines use semantic HTML elements to better understand the content and context of a web page. Properly structured content with semantic tags can positively impact search engine rankings.
+2. **Search Engine Optimization (SEO):** Search engines use semantic HTML elements to better understand the content and context of a web page. Properly structured content with semantic tags can positively impact search engine rankings. I actually learned this today when we used the Lighthouse feature in our Chrome browser.
 
 3. **Accessibility:** Semantic HTML enhances accessibility for users with disabilities, including screen reader users. It helps screen readers interpret the content correctly and allows users to navigate and understand the page's structure more effectively.
 
@@ -22,19 +23,20 @@ Using semantic elements in HTML is crucial for several reasons:
 
 5. **Future Compatibility:** Semantic elements are less likely to become obsolete or have their meaning altered in future HTML specifications, ensuring long-term compatibility.
 
-#### How many levels of headings are there in HTML?
+### How many levels of headings are there in HTML?
 
-In HTML, there are six levels of headings, denoted by `<h1>` through `<h6>`. `<h1>` represents the highest level, and `<h6>` is the lowest.
+There are six levels of headings. 
+They are denoted by `<h1>` through `<h6>`. `<h1>` represents the highest level, and `<h6>` is the lowest.
 
-#### What are some uses for the <sup> and <sub> elements?
+### What are some uses for the <sup> and <sub> elements?
 
-The `<sup>` and `<sub>` elements are used for defining superscript and subscript text, respectively. Some common uses include:
+The `<sup>` and `<sub>` elements are used for defining superscript and subscript text, respectively.
 
 - `<sup>` (Superscript): Used for elements that should appear smaller and above the baseline. 
 
 - `<sub>` (Subscript): Used for elements that should appear smaller and below the baseline. 
 
-#### When using the <abbr> element, what attribute must be added to provide the full expansion of the term?
+### When using the <abbr> element, what attribute must be added to provide the full expansion of the term?
 
 When using the `<abbr>` element, the `title` attribute must be added to provide the full expansion or explanation of the abbreviated term. This attribute allows you to specify the full text that should be displayed when users hover over or interact with the abbreviation. It is especially helpful for acronyms and abbreviations, ensuring that users understand the meaning.
 
@@ -50,7 +52,7 @@ Sources:
 
 [HTML Advanced Text Formatting](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting)
 
-### Learn CSS
+## Learn CSS
 
 **What are ways we can apply CSS to our HTML?**
 
@@ -103,9 +105,9 @@ Source:
 [How is CSS Structured](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_is_structured)
 
 
-### Learn JS
+## Learn JS
 
-#### Fundamentals
+### Fundamentals
 
 **What data type is a sequence of text enclosed in single quote marks?**
 - A sequence of text enclosed in single quotes represents a data type called a "string" in JavaScript.
@@ -124,11 +126,14 @@ Source:
 **Describe a real world Problem you could solve with a Function.**
 - A real-world problem would be calculating the total cost of items in a shopping cart, including applying discounts and taxes. You can create a JavaScript function, let's call it `calculateTotalCost`, that takes inputs like item prices, quantities, discount codes, and tax rates. This function can apply discounts based on the provided codes, calculate the subtotal, and then add the applicable tax to determine the total cost. 
 
-#### Conditionals 
+### Conditionals 
 
 
-**An if statement checks a _condition_ and if it evaluates to _true_, then the code block will execute.**
-- An if statement checks a specified condition, which is a Boolean expression. If the condition evaluates to true, the code block associated with the if statement will execute. If the condition is false, the code block will be skipped.
+**An if statement checks a ______ and if it evaluates to _______, then the code block will execute.**
+
+- Condition / True
+  
+  An if statement checks a condition and if the condition evaluates to true, then the code block will execute. If the condition is false, the code block will be skipped. (Booleans)
 
 **What is the use of an else if?**
 - The "else if" statement is used to check an additional condition if the preceding "if" condition is false. It allows for creating multiple conditional branches, making it possible to handle various scenarios. If the "if" condition is false, and there's an "else if" condition that evaluates to true, the code block associated with the "else if" will execute.
