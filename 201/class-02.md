@@ -30,11 +30,9 @@ They are denoted by `<h1>` through `<h6>`. `<h1>` represents the highest level, 
 
 ### What are some uses for the `<sup>` and `<sub>` elements?
 
-The `<sup>` and `<sub>` elements are used for defining superscript and subscript text, respectively.
+- `<sup>` (Superscript): Used for elements that should appear smaller and above the baseline. It could be used for footnotes and references. 
 
-- `<sup>` (Superscript): Used for elements that should appear smaller and above the baseline. 
-
-- `<sub>` (Subscript): Used for elements that should appear smaller and below the baseline. 
+- `<sub>` (Subscript): Used for elements that should appear smaller and below the baseline. It could be used for chemical formulas, such as  "H<sub>2</sub>O" for water. Cool.
 
 ### When using the <abbr> element, what attribute must be added to provide the full expansion of the term?
 
