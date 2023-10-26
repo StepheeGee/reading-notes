@@ -140,4 +140,6 @@ Learning from fellow students: I find that working in lab with my classmates hel
 Source: [6 Reasons for Pair Programming](https://www.codefellows.org/blog/6-reasons-for-pair-programming/)
 
 ## Things I want to know more about
+When to use a function instead of using a conditional if-else statement. 
+
 ![Books](photos/Books.jpg)

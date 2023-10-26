@@ -4,7 +4,7 @@ Class Three: 10.25.23
 
 Assignment Prepared: 10.24.23
 
-*The key emphasis of this assignment is to understand the fundamentals of HTML, CSS, and JS, including HTML ordered and unordered lists, the CSS Box Model, and JS arrays, operators, conditionals, and loops*
+*The key emphasis of this assignment is to understand the fundamentals of HTML, CSS, and JS, including HTML ordered and unordered lists, the CSS Box Model, and JS arrays, operators, conditionals, and loops.*
 ![Three](photos/three.jpg)
 
 ## Learn HTML
@@ -58,7 +58,7 @@ Sources:
 4. **Margin**: The margin is the space between the border of an element and the surrounding elements on the web page. Margins help control the layout and spacing between elements. You can define margins with the `margin` property.
 
 
-Sources:
+Source:
 
 [The Box Model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model)
 
