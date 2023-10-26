@@ -1,6 +1,6 @@
 # HTML Links, JS Functions, and Intro to CSS Layout
 
-Complete: 10.25.23
+Completed: 10.25.23
 
 Class Four: 10.26.23
 
@@ -127,7 +127,10 @@ The difference between a function declaration and a function invocation lies in 
 
 In the example above, `'Steph'` is an argument that is passed to the `greet` function, and it gets assigned to the `name` parameter inside the function.
 
-Source: [Funtions: Reusable Block Code](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions)
+Sources: 
+[Funtions: Reusable Block Code](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions)
+
+ChatGPT provided the examples
 
 ## Miscellaneous
 
