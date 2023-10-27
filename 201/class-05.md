@@ -18,7 +18,7 @@ Class Five: 10.27.23
 
 ### Provide an example of when the figure element would be useful in an HTML document.
 
-**Example of when the figure element is useful:** The `<figure>` element is commonly used to group together an image and its caption. For instance, if you have an article about famous landmarks, you can use `<figure>` to wrap an image of the Eiffel Tower and a `<figcaption>` element to provide a caption like "The Eiffel Tower in Paris, France." This aids in structuring content and makes it semantically meaningful.
+**Example of when the figure element is useful:** The `<figure>` element is used to group together an image and its caption. For instance, if you have an article about famous landmarks, you can use `<figure>` to wrap an image of the Eiffel Tower and a `<figcaption>` element to provide a caption like "The Eiffel Tower in Paris, France." This aids in structuring content and makes it semantically meaningful.
 
 ### Describe the difference between a gif image and an svg image, pretend you are explaining to an elder in your community.
 
@@ -26,7 +26,7 @@ Class Five: 10.27.23
 
 ### What image type would you use to display a screenshot on your website and why?
 
-**Image type for displaying a screenshot:** For displaying a screenshot on a website, it's usually best to use a PNG (Portable Network Graphics) image. PNG images are lossless, meaning they don't lose quality when saved. Screenshots often have text and details that need to be clear, and PNG images are excellent for preserving this clarity. Additionally, PNG supports transparency, allowing you to have non-rectangular screenshot images.
+**Image type for displaying a screenshot:** For displaying a screenshot on a website, I'd use a PNG (Portable Network Graphics) image. PNG images are lossless, meaning they don't lose quality when saved. Screenshots often have text and details that need to be clear, and PNG images are excellent for preserving this clarity.
 
 Sources: 
 
@@ -40,11 +40,13 @@ Sources:
 
 ### Describe the difference between foreground and background colors of an HTML element, pretend you are talking to someone with no technical knowledge.
 
-**Foreground and background colors:** Think of a web page like a book. The foreground color is like the ink color in the book, which makes the text and pictures visible. The background color is like the paper the book is printed on, providing a canvas for the content to sit on.
+**Foreground and background colors:** Foreground color is like the color of the writing or text on a piece of paper. When you write a letter or type something on your computer, the color of the words you see on the page is the foreground color. It's what you read, and it's the main color that stands out.
+
+Background color is like the color of the paper itself. Imagine you have a piece of paper, and it can be white, yellow, blue, or any other color. The color of the paper that makes your text stand out is the background color. I
 
 ### Your friend asks you to give his colorless blog website a touch up. How would you use color to give his blog some character?
 
-**Adding color to a colorless blog:** To make your friend's blog more interesting, you can start by selecting colors for the text and backgrounds. Use bright colors for headings to catch the reader's attention and calmer colors for the main text. You could also use color for links, making them stand out. Just like adding artwork to the walls of a room, colors can give a blog a unique and inviting feel.
+**Adding color to a colorless blog:** To make my friend's blog more interesting, I would start by selecting colors for the text and backgrounds. Use bright colors for headings to catch the reader's attention and calmer colors for the main text. I could also use color for links, making them stand out. I would also add some box shadows to the outline of elements on the blog. And I would definitely check the lighthouse score to make sure my color choices were optimally accessible.
 
 ### What should you consider when choosing fonts for an HTML document?
 
@@ -53,8 +55,11 @@ Sources:
 ### What do font-size, font-weight, and font-style do to HTML text elements?
 
 **Font properties:** These properties help you change how the text looks. 
+
 * `Font-size` controls how big or small the text is, like adjusting the size of the letters in your book.
+
 * `Font-weight` determines how bold or light the text is, similar to how strong or faint the letters appear.
+
 * `Font-style` allows you to make text italic, giving it a slanted appearance.
 
 ### Describe two ways you could add spacing around the characters displayed in an h1 element.
