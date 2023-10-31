@@ -113,7 +113,7 @@ A constructor is a special function in object-oriented programming languages, in
 6. **Namespacing**: Constructors help avoid naming conflicts by creating a separate scope for object properties and methods. This helps organize and manage code more effectively.
 
 
-### How does the term this differ when used in an object literal versus when used in a constructor?
+### How does the term `this` differ when used in an object literal versus when used in a constructor?
 
 **Difference in the Use of `this`**:
 
