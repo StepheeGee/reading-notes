@@ -4,7 +4,8 @@ Date Prepared: 10.30.23
 
 Class Six:  *Halloween* 10.31.23
 
-The purpose and emphasis of this reading assignment is give an introduction to HTML Tables and JS Constructor Function.
+The purpose and emphasis of this reading assignment is to give an introduction to HTML Tables and JS Constructor Function. Basically discussing the theory before implementation.
+
 ![Seven](photos/Seven.jpg)
 
 ## Domain Modeling
