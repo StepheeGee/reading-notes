@@ -12,8 +12,6 @@ Class TEN: 11/3/23
 
 The purpose of this reading assignment is to teach a developer how to troubleshoot routinely, accurately, and effectively to avoid disasters.
 
-[What Went Wrong? Troubleshooting JavaScript.](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_went_wrong)
-
 
 
 <div style="background-color: teal; color: gold; padding: 20px;">
@@ -44,15 +42,21 @@ The purpose of this reading assignment is to teach a developer how to troublesho
 
 3. **Logic Errors:** These were more challenging because the code ran without errors but produced incorrect results. I had to carefully review the logic and step through the code to identify where the problem lay. Common examples include incorrect if-else conditions and algorithms. Debugging and code reviews by peers were valuable for solving these errors.
 
-### How will this topic continue to influence your long term goals?
+<div style="background-color: teal; color: gold; padding: 20px;">
+    <h3>How will this topic continue to influence your long term goals?</h3>
+</div> 
 
 Understanding and debugging both syntax and logic errors is a crucial skill in software development. Long-term goals in software development often involve working on complex and large-scale projects. The ability to identify and fix errors efficiently is essential for maintaining and improving software. 
 
 Moreover, learning from past errors and challenges contributes to personal growth and expertise. It fosters the ability to write more robust code, design better algorithms, and improve problem-solving skills, all of which are vital for achieving long-term goals in software development.
 
+Sources:
+
+Chat GPT
 
 [The JavaScript Debugger.](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools#the_javascript_debugger)
 
+[What Went Wrong? Troubleshooting JavaScript.](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_went_wrong)
 
 
 <div style="background-color: teal; color: gold; padding: 20px;">
