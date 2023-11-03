@@ -4,7 +4,9 @@
 
 Prepared: 11/2/23
 
-Class 10: 11/3/23
+Class TEN: 11/3/23
+
+The purpose of this reading assignment is to teach a developer how to troubleshoot routinely, accurately, and effectively to avoid disasters.
 
 [What Went Wrong? Troubleshooting JavaScript.](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_went_wrong)
 
@@ -32,7 +34,7 @@ Class 10: 11/3/23
 
 ### How will this topic continue to influence your long term goals?
 
-Understanding and debugging both syntax and logic errors is a crucial skill in software development. Long-term goals in software development often involve working on complex and large-scale projects. The ability to identify and fix errors efficiently is essential for maintaining and improving software. It's a skill that will continue to be invaluable in my career.
+Understanding and debugging both syntax and logic errors is a crucial skill in software development. Long-term goals in software development often involve working on complex and large-scale projects. The ability to identify and fix errors efficiently is essential for maintaining and improving software. 
 
 Moreover, learning from past errors and challenges contributes to personal growth and expertise. It fosters the ability to write more robust code, design better algorithms, and improve problem-solving skills, all of which are vital for achieving long-term goals in software development.
 
@@ -67,3 +69,5 @@ The call stack is like a stack of books. Each book (or "frame") represents a fun
 [Debugging CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS)
 
 ### Things I want to know more about
+
+I still don't understand how a call stack works. 
