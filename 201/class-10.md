@@ -1,4 +1,10 @@
-## Debugging
+
+```html
+
+<div style="background-color: teal; color: gold; padding: 20px;">
+    <h2>Debugging</h2>
+</div>
+
 
 ![10](photos/ten.jpg)
 
@@ -10,7 +16,11 @@ The purpose of this reading assignment is to teach a developer how to troublesho
 
 [What Went Wrong? Troubleshooting JavaScript.](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_went_wrong)
 
-### Name some key differences between a Syntax Error and a Logic Error.
+```html
+
+<div style="background-color: teal; color: gold; padding: 20px;">
+    <h3>Name some key differences between a Syntax Error and a Logic Error.</h3>
+</div>
 
 1. **Syntax Error:**
    - Syntax errors occur when the code violates the rules of a programming language's syntax.
@@ -24,7 +34,11 @@ The purpose of this reading assignment is to teach a developer how to troublesho
    - Examples include incorrect calculations, incorrect if-else conditions, or wrong algorithm implementation.
    - Logic errors can be more challenging to identify because they don't necessarily trigger error messages.
 
-### List a few types of errors that you have encountered in past lab assignments and explain how you were able to correct them.
+```html
+
+<div style="background-color: teal; color: gold; padding: 20px;">
+    <h3>List a few types of errors that you have encountered in past lab assignments and explain how you were able to correct them.</h3>
+</div>
 
 1. **Syntax Errors:** These often occurred due to typographical mistakes such as missing semicolons or mismatched parentheses. They were relatively easy to correct as the code editor flagged them with error messages.
 
@@ -41,7 +55,11 @@ Moreover, learning from past errors and challenges contributes to personal growt
 
 [The JavaScript Debugger.](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools#the_javascript_debugger)
 
-### How would you describe the JavaScript Debugger tool and how it works to someone just starting out in software development?
+```html
+
+<div style="background-color: teal; color: gold; padding: 20px;">
+    <h3>How would you describe the JavaScript Debugger tool and how it works to someone just starting out in software development?</h3>
+</div>
 
  It's like a powerful microscope for your code. Here's how it works, in simple terms:
 
@@ -53,16 +71,27 @@ Moreover, learning from past errors and challenges contributes to personal growt
 
 4. **Find Bugs:** If something's not working right, you can use the debugger to find and fix the problem. You can see where your code is going wrong and make changes to make it right.
 
-### Define what a breakpoint is.
+```html
+
+<div style="background-color: teal; color: gold; padding: 20px;">
+    <h3>Define what a breakpoint is.</h3>
+</div>
 
 A breakpoint is like a marker you place in your code. It's a spot where you want your code to pause when you're running it through the debugger. This allows you to inspect what's going on at that exact moment in your code. You can check the values of variables, see if your conditions are being met, and generally understand what's happening. It's incredibly useful for troubleshooting and understanding your code's behavior.
 
-### What is the call stack?
+```html
+
+<div style="background-color: teal; color: gold; padding: 20px;">
+    <h3>What is the call stack?</h3>
+</div> 
 
 The call stack is like a stack of books. Each book (or "frame") represents a function or a piece of code that's currently running. When a function gets called, a new book (frame) is added to the top of the stack. When a function finishes, its frame is removed from the stack. The call stack helps your code keep track of where it is and where it needs to go next. It's essential for understanding the flow of your program and diagnosing issues like function calls that go too deep (stack overflow) or when you're trying to access variables that don't exist in the current context.
 
+```html
 
-## Bookmark and Review
+<div style="background-color: teal; color: gold; padding: 20px;">
+    <h2>Bookmark and Review</h2>
+</div> 
 
 [Debugging HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Debugging_HTML)
 
