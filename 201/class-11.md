@@ -4,7 +4,7 @@
 </div>
 
 <div style="background-color: firebrick; color: lemonchiffon;">
-    <h6>The purpose of this assignment is to discuss advanced CSS functionality and responsive design using HTML and CSS. </h6>
+    <h5>The purpose of this assignment is to discuss advanced CSS functionality and responsive design using HTML and CSS. </h5>
 </div>
 
 ![11](photos/eleven.jpg)
