@@ -12,7 +12,7 @@ function sayHello() {
 
 In the above code, we call the `sayHello` function before declaring it, but JavaScript doesn't produce an error because it hoists the function declaration to the top of the scope.
 
-However, when it comes to variables, if you want to assign a function to a variable, you must declare that variable before trying to initialize it with a function. Here's an example:
+But, when it comes to variables, if you want to assign a function to a variable, you must declare that variable before trying to initialize it with a function. Here's an example:
 
 ```javascript
 // This will produce an error

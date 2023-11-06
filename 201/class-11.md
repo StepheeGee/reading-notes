@@ -60,7 +60,8 @@ As the concert began, the audience marveled at the perfect harmony between Audio
 
 In the end, the concert was a huge success because Audio and Video were considerate of their diverse audience. They knew the importance of providing alternative content, ensuring that everyone, regardless of their devices or abilities, could enjoy their magical performance. And so, they continued to create wondrous experiences on the web, united in their commitment to inclusivity and accessibility.
 
-Source: ChatGPT 
+Source: A ChatGPT story
+
 <div style="background-color: firebrick; color: lemonchiffon;">
     <h3>Section 2</h3>
 </div>
