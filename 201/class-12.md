@@ -94,7 +94,9 @@ ChatGPT
 
 ### 2. How could Chart.js aid your previously created applications visually?
 
-   - **Enhanced Data Visualization:** If you have previously created applications that involve data presentation or analysis, integrating Chart.js can significantly enhance the visual representation of that data. It can transform raw numbers into intuitive charts and graphs, making the information more understandable.
+   - **Enhanced Data Visualization:** I can enhance the visual representation in the Odd-Ducks lab by creating a chart for the data, once the view results button is activated. 
+
+   Other ideas that Chat GPT suggests:
 
    - **Interactive Dashboards:** You can use Chart.js to build interactive dashboards that provide users with real-time data insights. Users can interact with the charts, apply filters, and customize their view of the data.
 
