@@ -11,13 +11,12 @@ Class Twelve: 11.7.23
 
 Prepared: 11.6.23
 
-
 <div style="background-color: midnightblue; color: palevioletred; padding: 20px;">
     <h2>Reading</h2>
 </div>
 
 <div style="background-color: mediumvioletred; color: mistyrose;">
-    <h2>Javascript Canvas</h3>
+    <h3>Javascript Canvas</h3>
 </div>
 
 ### 1. What does the `<canvas>` allow a developer to acheive?
@@ -40,7 +39,7 @@ Source:
 [Javascript Canvas](https://www.javascripttutorial.net/web-apis/javascript-canvas/)
 
 <div style="background-color: mediumvioletred; color: mistyrose;">
-    <h2>Documentation</h3>
+    <h3>Documentation</h3>
 </div>
 
 ### 1. What is Chart.js and how it can be brought into your project?
@@ -75,7 +74,7 @@ Sources:
 ChatGPT
 
 <div style="background-color: mediumvioletred; color: mistyrose;">
-    <h2>Animated Charts</h3>
+    <h3>Animated Charts</h3>
 </div>
 
 ### 1. What are some advantages to displaying data via a chart over a table?
