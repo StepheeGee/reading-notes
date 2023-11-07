@@ -2,12 +2,12 @@
     <h1>Chart.js & Canvas</h1>
 </div>
 <div style="background-color: mediumvioletred; color: mistyrose;">
-    <p>The purpose of this assignment is to discuss advanced animation with JS. </p>
+    <p>The purpose of this assignment is to discuss advanced animation with JS, including graphics for charts and tables. </p>
 </div>
 
 ![Class12](photos/twelve.jpg)
 
-Class 12: 11.7.23
+Class Twelve: 11.7.23
 
 Prepared: 11.6.23
 
