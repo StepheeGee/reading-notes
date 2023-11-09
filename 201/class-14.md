@@ -1,6 +1,5 @@
 
 <div style="background-color: black; color: floralwhite; padding: 20px;">
-
     <h1>CSS Transformations</h1>
     <p style="background-color: darkgreen; color: gainsboro; padding: 20px;">
         In today's reading assignment, we will learn about CSS advanced animations.

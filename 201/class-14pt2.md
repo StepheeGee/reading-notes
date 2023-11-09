@@ -1,9 +1,9 @@
 
 <div style="background-color: black; color: floralwhite; padding: 20px;">
     <h1>Psychology of Teams</h1>
-    <p style="background-color: darkgreen; color: gainsboro; padding: 20px;">
+<p style="background-color: darkgreen; color: gainsboro; padding: 20px;">
         In today's reading assignment, we will learn about managing team dynamics.
-    </p>
+</p>
 </div>
 
 ![14](photos/14.jpg)
@@ -16,10 +16,10 @@ Reference Article:
 
 [What Google Learned From Its Quest to Build the Perfect Team](https://web.archive.org/web/20221125192300/https://www.nytimes.com/2016/02/28/magazine/what-google-learned-from-its-quest-to-build-the-perfect-team.html)
 
-<h2 style="background-color: darkgreen; color: gainsboro; padding: 20px;">Discussion Questions</h2>
+<p style="background-color: darkgreen; color: gainsboro; padding: 50px;">Discussion Questions</p>
 
-<div style="background-color: black; color: floralwhite; padding: 20px;">
-    <h3>What are three key factors that contribute to psychologically safe teams?</h3></div>
+<div style="background-color: black; color: floralwhite; padding: 40px;">
+    <p>What are three key factors that contribute to psychologically safe teams?</p></div>
 
 1. **Empathy:** When team members are extended compassion in a safe environment, they are more likely to speak up, share their ideas and opinions, and take risks without fear of ridicule or retribution.
 
@@ -27,15 +27,15 @@ Reference Article:
 
 3. **Freedom to Experiment and Learn:** Teams that operate with psychological safety allow members to experiment, make mistakes, and learn from them without fear of blame or negative consequences. This encourages innovation and continuous improvement, as team members are more likely to take calculated risks and explore new approaches.
 
-<div style="background-color: black; color: floralwhite; padding: 20px;">
-    <h3>Evaluate, with details, a previous professional setting (or team) you were in with regards to psychological safety.</h3></div>
+<div style="background-color: black; color: floralwhite; padding: 40px;">
+    <p>Evaluate, with details, a previous professional setting (or team) you were in with regards to psychological safety.</p></div>
 
 
 - I consider Code Fellows a professional setting, considering the standards, code of conduct, and customs. One thing that I have appreciated in this setting is the amount of compassion and empathy extended. Mistakes are okay. This culture recognizes that as humans we will make mistakes. So instead of scrutinizing the mistakes, I've watched, in action, mistakes being utilized as an opportunity to clarify the expectations and measure growth. 
 
 
-<div style="background-color: black; color: floralwhite; padding: 20px;">
-    <h3>What impact do teams that operate with a high degree of psychological safety have on their company and the team members?</h3></div>
+<div style="background-color: black; color: floralwhite; padding: 40px;">
+    <p>What impact do teams that operate with a high degree of psychological safety have on their company and the team members?</p></div>
 
 High levels of psychological safety within teams can have several positive impacts:
 
@@ -50,7 +50,7 @@ High levels of psychological safety within teams can have several positive impac
 5. **Lower Turnover:** Teams with psychological safety tend to experience lower turnover rates because team members are happier and more likely to stay in a supportive and respectful environment.
 
 <div style="background-color: black; color: floralwhite; padding: 20px;">
-    <h5>Things I want to know more about</h5>
+    <p>Things I want to know more about</p>
 </div>
 Nothing at the moment
 
