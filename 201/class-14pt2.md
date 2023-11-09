@@ -1,10 +1,4 @@
-
-<div style="background-color: black; color: floralwhite; padding: 20px;">
-    <h1>Psychology of Teams</h1>
-<p style="background-color: darkgreen; color: gainsboro; padding: 20px;">
-        In today's reading assignment, we will learn about managing team dynamics.
-</p>
-</div>
+<div style="background-color: black; color: floralwhite; padding: 20px;"><h1>Psychology of Teams</h1><p style="background-color: darkgreen; color: gainsboro; padding: 20px;"> In today's reading assignment, we will learn about managing team dynamics.</p></div>
 
 ![14](photos/14.jpg)
 
