@@ -6,6 +6,9 @@
     </p>
 </div>
 
+Class 13: 11/8/23
+
+Prepared: 11/7/23
 
 ![13](photos/13.jpg)
 
