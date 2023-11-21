@@ -55,10 +55,12 @@ Properties
 
 But the important part here is that data with props are being passed in a uni-directional flow. (one way from parent to child)
 
-## Bookmark and Review
+### Bookmark and Review
 
 [React Tutorial through ‘Passing Data Through Props’](https://reactjs.org/tutorial/tutorial.html)
 [React Docs - Hello world](https://reactjs.org/docs/hello-world.html)
 [React Docs - Introducing JSX](https://reactjs.org/docs/introducing-jsx.html)
 [React Docs - Rendering elements](https://reactjs.org/docs/rendering-elements.html)
 [React Docs - Components and props](https://reactjs.org/docs/components-and-props.html)
+
+### Things I want to know more about
