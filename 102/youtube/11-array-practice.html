@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+  <script>
+
+    /*
+    function arraySwap(array) {
+           const lastIndex = array.length - 1;
+    
+            // We need to save the values first before
+            // swapping. Otherwise, if we swap directly,
+            // we would lose one of the values.
+            const lastValue = array[lastIndex];
+            const firstValue = array[0];
+    
+            array[0] = lastValue;
+            array[lastIndex] = firstValue;
+    
+            return array;
+          }
+          console.log(arraySwap([1, 20, 22, 24, 5]));
+          console.log(arraySwap(['hi', 'hello', 'hey']));
+    
+    let newArray = [];
+    const array = [1,2,3]
+    
+    for (let i=0; i<= array.length;i++ ){
+      newArray.push = (array[i]+1);
+      console.log(newArray);
+    
+    
+    function addNum(array,num){
+    let result =[];
+    
+    for(let i=0; i<= array.length; i++){
+      result.push(array[i]+num);
+    }
+    return result;
+    }
+    console.log(addNum([1, 2, 3], 2));}
+    
+    
+    function addArrays(array1,array2){
+    let result =[];
+    
+    for(let i=0; i<= array1.length; i++){
+      result.push(array1[i]+array2[i]);
+    }
+    return result;
+    }
+    
+    console.log(addArrays([1,1,2],[1,1,3]))
+    
+    function countPositive(nums){
+      let result = [];
+      for (let i=0; i< nums.length; i++){
+        if (nums[i] > 0) {
+                result++;
+              }
+            }
+    
+            return result;
+      }*/
+    let words = ['hello', 'world', 'search', 'good'];
+    let index = -1;
+
+    for (let i = 0; i <= words.length; i++) {
+      if (words[i] === 'search') {
+        index = i;
+      }
+    }
+
+    console.log(index);
+
+    words = ['not', 'found'];
+    index = -1;
+
+    for (let i = 0; i < words.length; i++) {
+      if (words[i] === 'search') {
+        index = i;
+      }
+    }
+
+    console.log(index);
+
+
+  </script>
+</body>
+
+</html>
