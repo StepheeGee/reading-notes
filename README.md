@@ -34,7 +34,7 @@ Feel free to explore, learn, and join me on this journey toward knowledge and pe
 
 
 
-[Contact Me](mailto:Steph@TheDadFirm.com)
+[Email Me](mailto:Steph@TheDadFirm.com)
 
 
 

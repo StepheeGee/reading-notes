@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+<body>
+  <script>
+
+//11.20.23 53:55
+
+//https://www.youtube.com/watch?v=BI1o2H9z9fo&t=177s
+/*Challenge 1
+const myString = 'developer'
+
+const firstLetter = myString.charAt(0).toUpperCase();
+// or const firstLetter = myString[0].toUpperCase();
+const remainingLetters = myString.slice(1);
+console.log(remainingLetters);
+
+let myNewString = firstLetter + remainingLetters;
+// or let myNewString = `${firstLetter}${remainingLetters}`;
+console.log(myNewString);
+
+
+let x; //variable for output
+
+const num = new Number (5); //number object using a constructor
+x = num.toString();
+
+x= num.toString().length; //because numbers don't directly have a length property
+x= num.toFixed(2);
+console.log(x);
+
+
+//Video on Math and its properties
+
+let x;
+
+x=Math.sqrt(9);
+
+x = Math.abs(-5);
+
+x = Math.round(4.643);
+
+x = Math.ceil(4.643);  //rounds up
+
+x = Math.floor(4.643); // rounds down
+
+x = Math.pow(2,3); //return the value raised to a specific number
+
+x = Math.min(3, 5, 6, 7); //returns the smallest in a list of values
+
+x = Math.max(3, 5, 6, 7);
+
+x = Math.random();  //gives a random decimal between 0 and 1
+
+x = Math.random() * 10 + 1; //gives a decimal betwee one and 10. add the one at the end because of indecing
+
+x = Math.floor(Math.random() * 100 + 1);
+
+console.log(x);
+*/
+//Math Challenge
+/*
+const x = Math.random() * 100 + 1;
+const y = Math.random() * 50 + 1;
+//Get the sum
+const sum = x + y;
+const sumOutput = `${x} + ${y} = ${sum}`;
+
+console.log(sumOutput);
+
+//Get the diff
+const diff = x - y;
+const diffOutput = `${x} - ${y} = ${diff}`;
+
+console.log(diffOutput);
+
+//Get the product
+const product = x * y;
+const productOutput = `${x} * ${y} = ${product}`;
+
+console.log(productOutput);
+
+//Get the remainder
+const rm = x % y;
+const rmOutput = `${x} % ${y} = ${rm}`;
+
+console.log(rmOutput);
+*/
+
+//DATES AND TIME
+/*
+let d;
+
+d = new Date();
+
+d = d.toString();
+
+d = new Date(2023, 10, 21); //The month (10) is zero based. So for instance November is 10.
+
+d = new Date('2021, 11, 21'); // Pass through a string instead of an argument, like above, 
+//and the month won't be 0 based
+
+d = Date.now(); //in milliseconds
+
+d = new Date('07-10-2022 02:23:00');
+d = d.getTime();
+d = d.valueOf();
+
+d = Math.floor(Date.now() / 1000);
+
+console.log(d);*/
+
+//METHODS ON DATE
+/*
+let x;
+
+let d = new Date();
+
+x = d.toString();
+x = d.valueOf();
+
+x = d.getFullYear();
+
+x = d.getMonth()+1; //Month is 0 based
+
+x = d.getDate(); //Date
+x = d.getDay(); // day of the week by number. today is tuesday so it's 2 based on 0
+
+x = `${d.getMonth()+1}-${d.getDate()}-${d.getFullYear()}`;
+
+x = Intl.DateTimeFormat('en-US').format(d);
+
+x = Intl.DateTimeFormat('default').format(d);
+x = Intl.DateTimeFormat('default', {month:'long'}).format(d); //will give the full name of the current month
+
+x=d.toLocaleString('default', {month: 'short'}); // short month using a built in API
+
+
+
+
+console.log(x);
+
+//ARRAYS
+
+let x;
+//Array Literal 
+const numbers = [12, 45, 33, 29, 39];
+
+//Array Constructor
+
+const fruits = new Array('apple','grape','orange');
+
+x = numbers[0];
+
+x = numbers.length; //how many numbers are in the array
+
+fruits[2] = 'pear';
+
+fruits[fruits.length]='blueberry';
+x=fruits;
+
+console.log(x);
+*/
+//ARRAY Methods
+// let x;
+
+// const arr = [34 , 55 , 95, 20, 15];
+
+//push puts a value on the end of the array 
+
+// arr.push(100);
+
+// //pop removes the last value on the end
+
+// arr.pop();
+
+// //unshift adds to beginning
+
+// arr.unshift(99);
+
+// //shift removes from the beginning
+
+// arr.shift(99);
+
+// arr.reverse();
+
+// x = arr.includes(20); //check to see if a specific value is in the array. will be true or false
+
+// x = arr.indexOf(15); // position of 4 in the array
+
+// x = arr.slice(1 , 4); // doesn't change the array. pass two arguments first and last value you want
+
+// x = arr.splice(1 , 4); //splice changes the array, it deletes values from the initial array
+
+// x = arr.splice (3,1); //removed a single element, 20, from an array
+
+// x = arr.splice(1,4).reverse().toString().charAt(); //1
+
+// console.log(x);
+
+//ARRAY - Nesting, Concatenating, and Spread youtube timestamp: 2:57
+/*
+const fruits = ['apple','pear','orange'];
+const berries = ['stawberry', 'blueberry', 'raspberry'];
+
+// fruits.push(berries);
+
+// x = fruits[3][2]; // will return raspberry. because position three in the fruits array is the berries array. and position two in the berries array is raspberry
+
+const allFruits = [fruits, berries];
+
+x= allFruits[1][0];
+
+x = fruits.concat(berries); //berries array is added to the fruits array
+
+//Spread operator is represented with three dots (...) Use this if you want the items and not the array itself 
+x=[...fruits,...berries];
+
+// Flatten arrays 
+const arr = [1,2, [3,4],5,[6,7],8];
+x= arr.flat(); //removes nested arrays
+
+
+
+//Static Methods on Array objects
+
+x = Array.isArray(fruits);
+ 
+//from creates an array from an array-like value
+x = Array.from('12345');
+
+// of creates an array from a set of values
+
+const a = 1;
+const b = 2;
+const c = 3;
+
+x=Array.of(a,b,c);
+
+console.log(x);
+*/
+
+//Array Challenge 
+//expected result [6,5,4,3,2,1,0]
+
+const arr = [1,2,3,4,5];
+
+arr.reverse().unshift(6) + arr.push(0);
+
+console.log(arr);
+
+
+  </script>
+</body>
+</html>
