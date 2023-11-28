@@ -2,7 +2,7 @@
 
 ## Class 2: 11/27/23
 
-**This assignment explores key concepts in React, focusing on the React lifecycle and the distinction between state and props. It involves identifying the order of execution in the React lifecycle, understanding the purpose of lifecycle methods like componentDidMount, differentiating between state and props, recognizing when to re-render applications, and exploring documentation and resources related to React, state, lifecycle, handling events, and Bootstrap.**
+**This assignment explores key concepts in React, focusing on the React lifecycle and the distinction between state and props.**
 
 ### Reading
 
