@@ -78,3 +78,77 @@
 
 I'm not sure yet.
 
+<details>
+<summary> Props Work
+</summary>
+In React, `props` are properties that are passed from parent components to their children. These properties are accessible within the child components as an object, allowing the child components to receive and utilize data or functionality passed down by their parent components.
+
+When you define a component and use it somewhere in your application, you can pass data to that component as props. These props become accessible within the component as an object with properties corresponding to the values passed in.
+
+For instance, in a parent component:
+
+```javascript
+<ChildComponent propName={propValue} />
+```
+
+And within the `ChildComponent`:
+
+```javascript
+function ChildComponent(props) {
+  // Access propValue using props.propName
+  return (
+    // Component rendering logic using props.propName
+  );
+}
+```
+
+This way, the `ChildComponent` can access and utilize the data passed via `propName` from its parent component (`propValue` in this case). This mechanism allows for data flow and communication between different parts of your React application.
+</details>
+
+<details>
+<summary>Declaring Props</summary>
+
+### Declaring Props
+
+1. **Parent Component:**
+   - Props are declared when using a child component and passing data to it.
+   - In JSX of the parent component, declare props when using the child component.
+
+    ```javascript
+    // ParentComponent.jsx
+    import ChildComponent from './ChildComponent';
+
+    function ParentComponent() {
+      return (
+        <ChildComponent propName={propValue} />
+      );
+    }
+    ```
+
+2. **Child Component:**
+   - Receive props as an object parameter in a functional component or via `this.props` in a class component.
+
+    ```javascript
+    // ChildComponent.jsx
+    function ChildComponent(props) {
+      // Access propValue using props.propName
+      return (
+        // Component rendering logic using props.propName
+      );
+    }
+    ```
+
+### Passing Props
+
+- **Parent Component → Child Component:**
+  - Pass props to the child component using JSX attributes.
+  - Attributes become properties of the `props` object in the child component.
+  - Example: `<ChildComponent propName={propValue} />`
+  - Here, `propValue` is passed as `propName` to the `ChildComponent`.
+
+In summary:
+
+- **Declaration:** Props are declared in the parent component where the child component is used.
+- **Passing:** Props are passed from the parent component to the child component through JSX attributes.
+- **Receiving:** In the child component, props are accessed as an object to use the passed data.
+</details>
