@@ -1,6 +1,51 @@
 
 ### Array Methods:
 
+
+1. **Spread Operator (`...`)**: Allows an iterable (like an array) to be expanded in places where multiple arguments or elements are expected.
+
+   ```javascript
+   const arr1 = [1, 2, 3];
+   const arr2 = [...arr1, 4, 5]; // Creates: [1, 2, 3, 4, 5]
+   ```
+
+2. **`filter()`**: Creates a new array with elements that pass the test provided by a function.
+
+   ```javascript
+   const numbers = [1, 2, 3, 4, 5];
+   const filtered = numbers.filter((num) => num % 2 === 0); // Returns: [2, 4]
+   ```
+
+3. **`Math` Object**:
+   - `Math.PI`: Represents the ratio of the circumference of a circle to its diameter.
+   - `Math.floor()`: Returns the largest integer less than or equal to a given number.
+   - `Math.ceil()`: Returns the smallest integer greater than or equal to a given number.
+   - `Math.random()`: Returns a pseudo-random number between 0 and 1.
+
+   ```javascript
+   const pi = Math.PI; // Value of PI
+   const num = 3.7;
+   const floorNum = Math.floor(num); // Returns: 3
+   const ceilNum = Math.ceil(num); // Returns: 4
+   const randomNum = Math.random(); // Returns: Random number between 0 and 1
+   ```
+
+4. **`Math.pow()`**: Returns the base to the exponent power, that is, base^exponent.
+
+   ```javascript
+   const base = 2;
+   const exponent = 3;
+   const result = Math.pow(base, exponent); // Returns: 8 (2^3 = 8)
+   ```
+
+5. **`push()`**: Adds one or more elements to the end of an array. Modifies the original array and returns the new length of the array.
+
+   ```javascript
+   const arr = [1, 2, 3];
+   arr.push(4); // Returns: 4 (length of the modified array)
+   ```
+
+
 #### `concat()`
 - **Purpose**: Merges two or more arrays and returns a new array.
 - **Usage**:
