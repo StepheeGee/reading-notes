@@ -1,10 +1,14 @@
 # REST: Asynchronous Code and Third Party APIs
 
-## Class 6: Date
+## Class 6: 12.4.23
+
+Prepared 12.2.23
 
 **Summary/Statement:** This assignment explores articles discussing the concept of REST (Representational State Transfer) and its application in building effective teams. It also includes tasks related to understanding REST concepts, obtaining API keys, and their relevance to upcoming assignments.
 
 ### Reading: What Google Learned From Its Quest to Build the Perfect Team
+
+[What Google Learned from its Quest to Build the Perfect Team](https://www.google.com/amp/mobile.nytimes.com/2016/02/28/magazine/what-google-learned-from-its-quest-to-build-the-perfect-team.amp.html)
 
 1. **To what extent did psychological safety impact your previous work experience?**  
    - My previous work experience was significantly impacted by psychological safety. It fostered an environment where team members felt comfortable taking risks, sharing ideas, and engaging in open discussions without fear of ridicule or retribution. This led to increased collaboration, creativity, and overall job satisfaction.
@@ -13,6 +17,8 @@
    - This article reinforces the importance of psychological safety in fostering effective teamwork. Moving forward, I aim to prioritize creating an inclusive and safe environment where team members feel valued, respected, and encouraged to voice their opinions, fostering a culture of openness and collaboration.
 
 ### Reading: How I explained REST to my brother
+
+[How Brook Explained REST to his brother](https://gist.github.com/brookr/5977550)
 
 3. **Who is Roy Fielding?**  
    - Roy Fielding is a computer scientist known for his significant contributions to the creation of the HTTP protocol and for formulating the REST architectural style.
@@ -37,30 +43,18 @@
 
 ### API Keys
 
-10. **Geocoding API: Did you get your API key?**  
-    - [Your response here]
+10. **[Geocoding API](https://locationiq.com/): Did you get your API key?**  
+    - Yes
 
-11. **Weather Bit API: Did you get your API key?**  
-    - [Your response here]
+11. **[Weather Bit API](https://www.weatherbit.io/): Did you get your API key?**  
+    - Yes
 
-12. **Yelp API Docs: Did you get your API key?**  
-    - [Your response here]
+12. **[Yelp API Docs](https://docs.developer.yelp.com/reference/v3_business_search): Did you get your API key?**  
+    - Yes
 
-13. **The Movie DB API Docs: Did you get your API key?**  
-    - [Your response here]
-
-
-### Resources
-[Link to Resource 1 Title](Link)
-
-
-### Bookmark and Review
-
-[Link to Resource 1 Title](Link)
-[Link to Resource 2 Title](Link)
-[Link to Resource 3 Title](Link)
+13. **[The Movie DB API Docs](https://developers.themoviedb.org/3/getting-started/introduction): Did you get your API key?**  
+    - Yes
 
 
 ### Things I want to know more about
 
-- Question you want more information on.
