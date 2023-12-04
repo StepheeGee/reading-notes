@@ -18,7 +18,7 @@ Prepared 12.2.23
 
 ### Reading: How I explained REST to my brother
 
-[How Brook Explained REST to his brother](https://gist.github.com/brookr/5977550)
+[How Ryan Tomayko Explained REST to his brother](https://gist.github.com/brookr/5977550)
 
 3. **Who is Roy Fielding?**  
    - Roy Fielding is a computer scientist known for his significant contributions to the creation of the HTTP protocol and for formulating the REST architectural style.
