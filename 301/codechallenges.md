@@ -671,8 +671,7 @@ In each example, `reduce()` accumulates the result based on the logic within its
 
 
 
-<details>
-<summary>Array.reduce</summary>
+c
 
 ### Extracting values of an object into an array:
 ```javascript
@@ -882,3 +881,283 @@ const hasChildrenValues = (arr, character) => {
   return false;
 };
 ```
+
+<details>
+<summary>Array.reduce to reverse a string</summary>
+
+You can utilize `reduce` to reverse a string by iterating through its characters in reverse order. Here's how you can do it:
+
+```javascript
+const reversedString = (str) => {
+  return str.split('').reduce((reversed, character) => character + reversed, '');
+};
+```
+
+Here's a breakdown of the process:
+
+- `split('')` breaks the input string into an array of characters.
+- `reduce` starts with an empty string as the initial `reversed` value.
+- The callback function takes each `character` from the array and adds it before the current `reversed` string. This effectively reverses the string by accumulating characters in reverse order.
+- Finally, `''` as the second argument in `reduce` represents the initial value for the `reversed` string.
+
+For instance:
+
+```javascript
+const inputString = "Hello, world!";
+const reversed = reversedString(inputString);
+console.log(reversed); // Output: "!dlrow ,olleH"
+```
+
+This function reverses the input string without using the built-in `.reverse()` method by leveraging the `reduce` method and string manipulation.
+</details>
+
+<details>
+<summary>Count number of elements in an array using reduce</summary>
+ You can count the number of elements in an array using `reduce` without using the built-in `length` property. Here's an implementation for the `countNumberOfElements` function:
+
+```javascript
+const countNumberOfElements = (arr) => {
+  return arr.reduce((count) => count + 1, 0);
+};
+```
+
+This function takes an array as input and uses `reduce` to count the number of elements.
+
+Example usage:
+
+```javascript
+const array = [1, 2, 3, 4, 5];
+const numberOfElements = countNumberOfElements(array);
+console.log(numberOfElements); // Output: 5
+```
+
+Here's how it works:
+- The `reduce` method starts with an initial value of `0` as the `count`.
+- For each element in the array, `reduce` increments the `count` by `1`.
+- Finally, the accumulated `count` value is returned, representing the total number of elements in the array.
+
+This function effectively counts the number of elements in the array using `reduce` without relying on the array's built-in `length` property.
+</details>
+
+<details>
+<summary>Total amount purchased using reduce</summary>
+Certainly! To find the total amount purchased from an array of objects containing `item` and `purchasePrice` keys, you can use `reduce` to sum up all the `purchasePrice` values. Here's how you can implement the `addPurchases` function:
+
+```javascript
+const addPurchases = (arr) => {
+  return arr.reduce((total, purchase) => total + purchase.purchasePrice, 0);
+};
+```
+
+This function `addPurchases` takes an array of objects as input and uses `reduce` to accumulate the `purchasePrice` values into a total sum.
+
+Example usage:
+
+```javascript
+const purchases = [
+  { item: 'switch', purchasePrice: 399 },
+  { item: 'headphones', purchasePrice: 149 },
+  { item: 'keyboard', purchasePrice: 79 }
+];
+
+const totalAmount = addPurchases(purchases);
+console.log(totalAmount); // Output: 627 (399 + 149 + 79 = 627)
+```
+
+Here's how it works:
+- The `reduce` method starts with an initial value of `0` for the `total`.
+- For each object in the array, it adds the `purchasePrice` to the `total`.
+- Finally, the accumulated `total` value is returned, representing the sum of all `purchasePrice` values in the array of objects.
+</details>
+
+## Day Six
+
+Here are the JavaScript challenges converted into Markdown format:
+
+```markdown
+## CHALLENGE 1 - Review
+
+Write a function that iterates over an array of people objects and creates a new list of each person's full name using the array method 'map'.
+
+```javascript
+const toLastNames = people => {
+  return people.map(person => `${person.firstName} ${person.lastName}`);
+};
+```
+
+---
+
+## CHALLENGE 2
+
+Write a function named `addValues` that, given an array of numbers as input, uses `reduce` to add the values in the array.
+
+```javascript
+const addValues = (arr) => {
+  return arr.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+};
+```
+
+---
+
+## CHALLENGE 3
+
+Write a function named `addPurchases` that, given an array of objects as input, uses `reduce` to find the total amount purchased.
+
+```javascript
+const addPurchases = (arr) => {
+  return arr.reduce((total, purchase) => total + purchase.purchasePrice, 0);
+};
+```
+
+---
+
+## CHALLENGE 4
+
+Write a function named `countNumberOfElements` that, given an array as input, uses `reduce` to count the number of elements in the array.
+
+```javascript
+const countNumberOfElements = (arr) => {
+  return arr.reduce((count) => count + 1, 0);
+};
+```
+
+---
+
+## CHALLENGE 5
+
+Write a function named `returnNames` that, given the Star Wars data, uses `reduce` to return an array containing the names of the characters.
+
+```javascript
+let starWarsData = [ /* ... Star Wars data ... */ ];
+
+const returnNames = (arr) => {
+  return arr.reduce((names, character) => {
+    names.push(character.name);
+    return names;
+  }, []);
+};
+```
+
+---
+
+## CHALLENGE 6
+
+Write a function named `reversedString` that takes in a string and returns a string with the letters in reverse order using `reduce`.
+
+```javascript
+const reversedString = (str) => {
+  return str.split('').reduce((reversed, character) => character + reversed, '');
+};
+```
+
+---
+
+## CHALLENGE 7 - Stretch Goal
+
+To count the total number of children in the provided data set using `reduce`, you'll need to iterate through the `characters` array and calculate the cumulative count of children across all objects. Here's how you can implement the `countNumberOfChildren` function:
+
+const characters = [
+  {
+    name: 'Eddard',
+    spouse: 'Catelyn',
+    children: ['Robb', 'Sansa', 'Arya', 'Bran', 'Rickon'],
+    house: 'Stark',
+  },
+  {
+    name: 'Jon',
+    spouse: 'Lysa',
+    children: ['Robin'],
+    house: 'Arryn',
+  },
+  {
+    name: 'Cersei',
+    spouse: 'Robert',
+    children: ['Joffrey', 'Myrcella', 'Tommen'],
+    house: 'Lannister',
+  },
+  {
+    name: 'Daenarys',
+    spouse: 'Khal Drogo',
+    children: ['Drogon', 'Rhaegal', 'Viserion'],
+    house: 'Targaryen',
+  },
+  {
+    name: 'Mace',
+    spouse: 'Alerie',
+    children: ['Margaery', 'Loras'],
+    house: 'Tyrell',
+  },
+  {
+    name: 'Sansa',
+    spouse: 'Tyrion',
+    house: 'Stark',
+  },
+  {
+    name: 'Jon',
+    spouse: null,
+    house: 'Snow',
+  },
+];
+
+```javascript
+const countNumberOfChildren = (arr) => {
+  return arr.reduce((totalChildren, character) => {
+    if (character.children) {
+      return totalChildren + character.children.length;
+    }
+    return totalChildren;
+  }, 0);
+};
+```
+
+This function `countNumberOfChildren` takes the `characters` array as input and uses `reduce` to accumulate the total count of children across all characters.
+
+Example usage:
+
+```javascript
+const totalChildrenCount = countNumberOfChildren(characters);
+console.log(totalChildrenCount); // Output: 17 (sum of all children in the data set)
+```
+
+Here's how it works:
+- The `reduce` method starts with an initial value of `0` for `totalChildren`.
+- For each character in the array, it checks if the character has a `children` property.
+- If the `children` property exists, it adds the length of the `children` array to the `totalChildren`.
+- Finally, the accumulated `totalChildren` value is returned, representing the total number of children across all characters in the data set.
+
+## CHALLENGE 8 - Stretch Goal
+
+To calculate the average value of an array of numbers using `reduce`, you can use an accumulator object that keeps track of both the count of elements and their sum. Here's the implementation for the `calculateAverage` function:
+
+```javascript
+const calculateAverage = (arr) => {
+  const initialValue = { count: 0, sum: 0 };
+
+  const { count, sum } = arr.reduce(
+    (accumulator, currentValue) => ({
+      count: accumulator.count + 1,
+      sum: accumulator.sum + currentValue,
+    }),
+    initialValue
+  );
+
+  return sum / count;
+};
+```
+
+This function `calculateAverage` takes an array of numbers as input and calculates their average value using `reduce`.
+
+Usage example:
+
+```javascript
+const numbers = [10, 20, 30, 40, 50];
+const average = calculateAverage(numbers);
+console.log(average); // Output: 30 (average of 10, 20, 30, 40, 50)
+```
+
+Here's the breakdown of how it works:
+- The initial value for the accumulator is an object `{ count: 0, sum: 0 }`.
+- The `reduce` function accumulates the count of elements and their sum by iterating through the array.
+- Finally, it calculates the average by dividing the sum by the count of elements.
+
+This function effectively computes the average value of the array by utilizing `reduce` and maintaining an accumulator object to keep track of the count and sum.
