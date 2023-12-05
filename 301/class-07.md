@@ -57,16 +57,11 @@ v20.10.0
 
 
 
-### Bookmark and Review
-
-[Link to Resource 1 Title](Link)
-[Link to Resource 2 Title](Link)
-[Link to Resource 3 Title](Link)
 
 
 ### Things I want to know more about
 
-- Question you want more information on.
+
 
 # Notes
- ![Dissect URL](path.png)
+
