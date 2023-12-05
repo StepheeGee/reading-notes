@@ -28,11 +28,12 @@
 ### Backend Repo Setup:
 
 1. **Create Repository**: Initialize a repository for the backend.
-      Back-end Repo (NO CREATE VITE for this)
-      make public
-      add readme
-      add license
-      add node gitignore template
+
+      - Back-end Repo (NO CREATE VITE for this)
+      - make public
+      - add readme
+     - add license
+     - add node gitignore template
 clone in machine - git clone of backend repo
 2. **Local Setup**:
    - Create a folder for the backend project on your local machine.
