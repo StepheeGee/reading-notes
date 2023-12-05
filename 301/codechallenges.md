@@ -1161,3 +1161,14 @@ Here's the breakdown of how it works:
 - Finally, it calculates the average by dividing the sum by the count of elements.
 
 This function effectively computes the average value of the array by utilizing `reduce` and maintaining an accumulator object to keep track of the count and sum.
+
+
+<details>
+<summary>Remember</summary>
+
+forEach iterates over each element in an array and executes the callback function
+
+map will iterate through each element in the array and executes the callback function for each eleement and returns a value of any kind. That value is pushed into a new array
+
+file will iterate through each element in the array and executes the callback function for each element. If the callback function returns true, the element itself is pushed into a new array
+</details>

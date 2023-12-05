@@ -1,12 +1,12 @@
 # APIs
 
-## Class 8: Date
+## Class 8: 12.5.23
 
-**Summary/Statement:** This assignment focuses on API design best practices, particularly regarding RESTful APIs. It covers fundamental concepts such as REST, resource identifiers, HTTP verbs, URI design, and HTTP status codes. Additionally, it includes resources related to regular expressions (Regex).
+**Summary/Statement:** This assignment focuses on API design best practices, particularly regarding RESTful APIs.
 
 ### Reading: API Design Best Practices
 
-[API Design Best Practices](Link)
+[API Design Best Practices](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design)
 
 1. **What does REST stand for?**  
    - REST stands for Representational State Transfer.
@@ -43,20 +43,10 @@
 
 ### Bookmark and Review
 
-[RegExr - Pay particular attention to the cheatsheet](Link)  
-[Regex Tutorial](Link)  
-[Regex 101](Link)
+[RegExr - Pay particular attention to the cheatsheet](https://regexr.com/)  
+[Regex Tutorial](https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285)  
+[Regex 101](https://regex101.com/)
 
-
-### Resources
-[Link to Resource 1 Title](Link)
-
-
-### Bookmark and Review
-
-[Link to Resource 1 Title](Link)
-[Link to Resource 2 Title](Link)
-[Link to Resource 3 Title](Link)
 
 
 ### Things I want to know more about

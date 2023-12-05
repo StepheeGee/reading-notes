@@ -1,6 +1,6 @@
 # Node.js: Express Servers
 
-## Class 7: Date
+## Class 7: 12.4.23
 
 **Summary/Statement:** This assignment delves into understanding Node.js, covering its fundamentals, JavaScript runtime environment, npm, and exploring the benefits and workings of pair programming. Additionally, it includes resources related to API documentation, Axios, and asynchronous JavaScript.
 
@@ -56,12 +56,71 @@ v20.10.0
 [MDN async and await](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await)
 
 
-
-
-
 ### Things I want to know more about
-
-
 
 # Notes
 
+<details>
+<summary>Class Components</summary>
+In React, a functional component can be created from a class component by converting the class-based structure to a function-based one. Here's an example of how you might do that:
+
+### Class-based component:
+
+```javascript
+import React, { Component } from 'react';
+
+class MyComponent extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      // ... initial state
+    };
+    // ... bind methods if needed
+  }
+
+  // ... other methods
+
+  render() {
+    return (
+      <div>
+        {/* ... component JSX */}
+      </div>
+    );
+  }
+}
+
+export default MyComponent;
+```
+
+### Functional component equivalent:
+
+```javascript
+import React, { useState } from 'react';
+
+const MyComponent = (props) => {
+  const [state, setState] = useState({
+    // ... initial state
+  });
+
+  // ... other logic
+
+  return (
+    <div>
+      {/* ... component JSX */}
+    </div>
+  );
+};
+
+export default MyComponent;
+```
+
+In the functional component equivalent:
+
+- `useState` from React is used to create and manage state.
+- The component is defined as a JavaScript arrow function.
+- The state is managed using the `useState` hook instead of `this.state` in the constructor.
+- Lifecycle methods and class-specific functions are refactored to fit within the functional component's structure.
+
+Remember, functional components can also utilize other hooks like `useEffect` for lifecycle methods and `useContext`, `useReducer`, etc., based on the needs of the component.
+
+</details>
