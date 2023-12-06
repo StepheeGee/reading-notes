@@ -1,12 +1,12 @@
 # Functional Programming: Modularization, Refactoring
 
-## Class 9: Date
+## Class 9: 12.6.23 (Day before class)
 
 **Summary/Statement:** This assignment explores concepts related to functional programming, emphasizing the definition of functional programming, pure functions, immutability, and referential transparency. Additionally, it includes a video tutorial focusing on modules and the 'require' functionality in Node.js.
 
 ### Reading: Functional Programming Concepts
 
-[Functional Programming Concepts](Link)
+[Functional Programming Concepts](https://medium.com/the-renaissance-developer/concepts-of-functional-programming-in-javascript-6bc84220d2aa)
 
 1. **What is functional programming?**  
    - Functional programming is a programming paradigm centered around the use of pure functions, immutable data, and declarative style, emphasizing the evaluation of functions and avoiding side effects.
@@ -25,7 +25,7 @@
 
 ### Videos: Node JS Tutorial for Beginners #6 - Modules and require()
 
-[Node JS Tutorial for Beginners #6 - Modules and require()](Link)
+[Node JS Tutorial for Beginners #6 - Modules and require()](https://www.youtube.com/watch?v=xHLd36QoS4k)
 
 6. **What is a module?**  
    - A module is a reusable block of code that encapsulates related functionality, allowing it to be used in other parts of the application.
@@ -40,17 +40,6 @@
    - To make a module available, it needs to be exported using the 'module.exports' or 'exports' object within the module file.
 
 
-### Resources
-[Link to Resource 1 Title](Link)
+# Things I want to know more about
 
-
-### Bookmark and Review
-
-[Link to Resource 1 Title](Link)
-[Link to Resource 2 Title](Link)
-[Link to Resource 3 Title](Link)
-
-
-### Things I want to know more about
-
-- Question you want more information on.
+Regex 

@@ -1172,3 +1172,338 @@ map will iterate through each element in the array and executes the callback fun
 
 file will iterate through each element in the array and executes the callback function for each element. If the callback function returns true, the element itself is pushed into a new array
 </details>
+
+## Day Seven
+
+Absolutely! Here's the Markdown version including the challenge instructions:
+
+### Challenge 1 - Review
+
+Write a function named `updateAnimal` that takes in an array of animals (strings) and some callback function. This function should first create a new array. Then iterate over the input array and modify each value based on the callback function provided. Push each updated animal string into the new array. Return the new array.
+
+HINT: Look at the tests to see how the callback functions are used.
+
+```javascript
+function upper(str) {
+  return str.toUpperCase();
+}
+
+function lower(str) {
+  return str.toLowerCase();
+}
+
+const updateAnimal = (arr, callback) => {
+  const updatedAnimals = [];
+  arr.forEach(animal => updatedAnimals.push(callback(animal)));
+  return updatedAnimals;
+};
+```
+
+### Challenge 2
+
+Write a function called `sortNames` that takes an array of names and sorts them alphabetically. Capital letters should come before lowercase letters.
+
+For example: 'Cat' would come before 'apple'
+
+```javascript
+const sortNames = (arr) => {
+  return arr.sort();
+};
+```
+
+### Challenge 3
+
+Write a function called `sortNumbers` that takes an array of numbers and sorts them from smallest to largest.
+
+HINT: Beware... JS default is "Lexical" ordering.
+
+```javascript
+const sortNumbers = (arr) => {
+  return arr.sort((a, b) => a - b);
+};
+```
+
+### Challenge 4
+
+Write a function named `sortBackwards` that takes in an array of numbers and returns the same array, with the numbers sorted, largest to smallest.
+
+HINT: Do it with a custom sort callback, not with using `.reverse()`. ;)
+
+```javascript
+const sortBackwards = (arr) => {
+  return arr.sort((a, b) => b - a);
+};
+```
+
+### Challenge 5
+
+Write a function named `alphabetize` that takes in an array of strings and returns the same array with the strings sorted alphabetically. In this alphabetization, capital letters come before lower case letters.
+
+For example, `['Alphabet', 'Zebra', 'alphabet', 'carrot']` is correctly sorted.
+
+```javascript
+const alphabetize = (arr) => {
+  return arr.sort((a, b) => a.localeCompare(b));
+};
+```
+
+### Challenge 6
+
+Write a function named `sortByPrice` that takes in an array of objects, each of which has a 'price' property, and sorts those objects by price, lowest to highest, returning the same array.
+
+Here is an example of the input:
+
+```javascript
+[
+  {name: 'Sweatshirt', price: 45},
+  {name: 'Bookmark', price: 2.50},
+  {name: 'Tote bag', price: 15}
+];
+```
+
+```javascript
+const sortByPrice = (arr) => {
+  return arr.sort((a, b) => a.price - b.price);
+};
+```
+
+These functions perform various sorting tasks based on different criteria as specified in the challenges.
+
+## Day Eight
+
+<details><summary>Sort Array</summary>
+You can sort an array from biggest to smallest by using the `sort()` method with a custom comparison function that sorts the elements in descending order. Here's an example:
+
+```javascript
+const sortBiggestToSmallest = (arr) => {
+  return arr.sort((a, b) => b - a);
+};
+
+// Example usage:
+const numbers = [10, 5, 8, 2, 14];
+const sortedDescending = sortBiggestToSmallest(numbers);
+console.log(sortedDescending); // Output: [14, 10, 8, 5, 2]
+```
+
+The `sort()` method takes a comparison function that subtracts `b` from `a`. If the result is negative (a < b), `b` is placed before `a`, effectively sorting the array in descending order.
+</details>
+
+<details><summary>Splice</summary>
+Certainly! You can achieve this by using the `splice()` method. Here's an example of a function that removes three items from the array starting from the given index:
+
+```javascript
+const removeThreeItems = (index, arr) => {
+  arr.splice(index, 3);
+  return arr;
+};
+
+// Example usage:
+const myArray = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
+const indexToRemove = 2;
+
+const newArray = removeThreeItems(indexToRemove, myArray);
+console.log(newArray); // This will log ['a', 'b', 'e', 'f', 'g']
+```
+
+In this example:
+- `removeThreeItems` takes an index and an array as parameters.
+- The `splice()` method is used on the array with the given index and a count of 3 to remove three items starting from the specified index.
+- The modified array (with three items removed) is then returned.
+</details>
+
+
+<details><summary>Join</summary>
+Sure, you can create a function that joins all elements of an array into a single string separated by spaces using the `join()` method. Here's an example:
+
+```javascript
+const joinWithSpace = (arr) => {
+  return arr.join(' ');
+};
+
+// Example usage:
+const myArray = ['This', 'is', 'an', 'example'];
+const result = joinWithSpace(myArray);
+console.log(result); // Output: 'This is an example'
+```
+
+In this example:
+- The `joinWithSpace` function takes an array as a parameter.
+- The `join()` method is called on the array with the argument `' '` to join the elements together with a space.
+- The resulting string is returned.
+</details>
+
+
+
+<details><summary>Split</summary>
+Here are a few examples of using the `.split()` function in JavaScript:
+
+### Example 1: Splitting a String into Words
+```javascript
+const sentence = 'The quick brown fox';
+const words = sentence.split(' '); // Splits the sentence at each space
+console.log(words); // Output: ['The', 'quick', 'brown', 'fox']
+```
+
+### Example 2: Splitting a String by Comma
+```javascript
+const csvData = 'Alice,Bob,Charlie,David';
+const names = csvData.split(','); // Splits the string at each comma
+console.log(names); // Output: ['Alice', 'Bob', 'Charlie', 'David']
+```
+
+### Example 3: Splitting a String into Characters
+```javascript
+const word = 'Hello';
+const chars = word.split(''); // Splits the string into individual characters
+console.log(chars); // Output: ['H', 'e', 'l', 'l', 'o']
+```
+
+In these examples, `.split()` is used to break a string into an array of substrings based on a defined separator (space, comma, or an empty string). The resulting array contains the substrings or characters obtained by splitting the original string.</details>
+
+
+
+### CHALLENGE 1 - Review
+
+Write a function called `sortStarWarsCharacters` that sorts the characters in the `starWarsPeople` array by height from tallest to shortest.
+
+```javascript
+let starWarsPeople = [
+  {
+    name: 'C-3PO',
+    height: '167',
+    eye_color: 'yellow'
+  },
+  {
+    name: 'Luke Skywalker',
+    height: '172',
+    eye_color: 'blue'
+  },
+  {
+    name: 'R2-D2',
+    height: '96',
+    eye_color: 'red'
+  }
+];
+
+const sortStarWarsCharacters = (starWarsArr) => {
+  return starWarsArr.sort((a, b) => Number(b.height) - Number(a.height));
+};
+```
+
+*Explanation*: The solution uses `Array.sort` to sort the `starWarsPeople` array based on the characters' heights in descending order. It converts the `height` strings to numbers for proper comparison.
+
+### CHALLENGE 2
+
+Write a function named `removeThree` that takes an index and an array. The function should remove three items in the array starting with the value at the index.
+
+*Solution*:
+```javascript
+const removeThree = (idx, arr) => {
+  arr.splice(idx, 3);
+  return arr;
+};
+```
+
+*Explanation*: The `splice` method is used to remove three items from the array starting at the provided index `idx`.
+
+### CHALLENGE 3
+
+Write a function named `joinArray` that takes an array and joins all of the elements together in one string on a space.
+
+*Solution*:
+```javascript
+const joinArray = (arr) => {
+  return arr.join(' ');
+};
+```
+
+*Explanation*: The solution uses the `join` method to concatenate all elements of the array into a single string separated by spaces.
+
+Here's the continuation of the Markdown file with the solutions and explanations for Challenges 4 through 6:
+
+### CHALLENGE 4
+
+Write a function named `howMuchPencil` that takes in a string, as written on the side of a pencil. As you sharpen the pencil, the string will become shorter and shorter, starting by removing the first letter. Your function should use slice within a loop and return an array of each successive string result from losing letters to the sharpener, until nothing is left.
+
+*Solution*:
+```javascript
+const howMuchPencil = (str) => {
+  let result = [];
+  for (let i = 0; i <= str.length; i++) {
+    result.push(str.slice(i));
+  }
+  return result;
+};
+```
+
+*Explanation*: The function uses a loop to create a sequence of strings obtained by removing one character at a time from the start using the `slice` method. It generates a progression of strings representing the text on the pencil as it gets shorter.
+
+### CHALLENGE 5
+
+Write a function named `wordsToCharList` that, given a string as input, returns a new array where every element is a character of the input string.
+
+*Solution*:
+```javascript
+const wordsToCharList = (str) => {
+  return str.split('');
+};
+```
+
+*Explanation*: The function uses the `split` method to convert the input string into an array of individual characters, where each character becomes an element in the resulting array.
+
+### CHALLENGE 6
+
+
+You are making a grocery list for ingredients needed in the gruffalo crumble recipe, below. Rather than taking the entire recipe, you only want a list of the item names.
+
+Write a function named listFoods that takes in the recipe and returns a new array of the food items without any amount or units. Just the name. For example, '1 cup flour' will return 'flour'.
+
+Use slice for this function, maybe more than once. The Array.indexOf() method may also be helpful.
+
+Do not use split for this function.
+
+
+const gruffaloCrumble = {
+  name: 'How to make a Gruffalo Crumble',
+  ingredients: [
+    '1 medium-sized Gruffalo',
+    '8 pounds oats',
+    '2 pounds brown sugar',
+    '4 pounds flour',
+    '2 gallons pure maple syrup',
+    '16 cups chopped nuts',
+    '1 pound baking soda',
+    '1 pound baking powder',
+    '1 pound cinnamon',
+    '6 gallons melted butter',
+    '2 gallons fresh water',
+  ],
+  steps: [
+    'Pre-heat a large oven to 375',
+    'De-prickle the gruffalo',
+    'Sprinkle with cinnamon, sugar, flour, and nuts',
+    'Mix until evenly distributed',
+    'Grease a 3-foot x 3-foot casserole dish',
+    'Combine gruffalo compote with water to maintain moisture in the oven',
+    'Fold together remaining ingredients to make the crisp',
+    'Spread the crisp evenly over the gruffalo mixture',
+    'Bake for 12-15 hours',
+  ]
+};
+
+*Solution*:
+
+```javascript
+const listFoods = (recipe) => {
+  const { ingredients } = recipe;
+  const result = ingredients.map((ingredient) => {
+    const firstSpaceIndex = ingredient.indexOf(' ');
+    const secondSpaceIndex = ingredient.indexOf(' ', firstSpaceIndex + 1);
+    return ingredient.slice(secondSpaceIndex + 1);
+  });
+
+  return result;
+};
+```
+
+*Explanation*: The function `listFoods` extracts the food names from the `ingredients` array of the `gruffaloCrumble` recipe. It uses the `slice` method to get the substring starting from the second space in each ingredient, effectively removing the amount and units.
