@@ -1508,7 +1508,684 @@ const listFoods = (recipe) => {
 
 *Explanation*: The function `listFoods` extracts the food names from the `ingredients` array of the `gruffaloCrumble` recipe. It uses the `slice` method to get the substring starting from the second space in each ingredient, effectively removing the amount and units.
 
+## Day Nine
+
+### Challenge 1
+
+Write a function named getNames that, given an array of people objects, uses map to return an array of names reversed.
+
+For example:
+[
+{
+  name: 'lloyd',
+  age: 32,
+  shoeSize: 12
+},
+{
+  name: 'jamie',
+  age: 21,
+  shoeSize: 8
+}
+]
+
+Returns: ['dyoll', 'eimaj'];
+
+<details>
+<summary> Challenge 1</summary>
+You can achieve this using the `map()` function along with the `reverse()` and `split()` methods to reverse each name in the array of objects:
+
+Here's the implementation for the `getNames` function:
+
+```javascript
+const getNames = (arr) => {
+  return arr.map(person => person.name.split('').reverse().join(''));
+};
+```
+
+Explanation:
+- The `map()` function iterates through each object in the array.
+- For each object, `person.name` accesses the name property.
+- `.split('')` splits the name into an array of characters.
+- `.reverse()` reverses the order of the characters in the array.
+- `.join('')` joins the characters back into a string, producing the reversed name.
+- The resulting array contains the reversed names corresponding to each object's name property.
+
+You can use this `getNames` function with an array of people objects to get an array of their names reversed. For instance:
+
+```javascript
+const people = [
+  {
+    name: 'lloyd',
+    age: 32,
+    shoeSize: 12
+  },
+  {
+    name: 'jamie',
+    age: 21,
+    shoeSize: 8
+  }
+];
+
+const reversedNames = getNames(people);
+console.log(reversedNames); // Output: ['dyoll', 'eimaj']
+```
+
+This code takes the provided array of people objects, applies the `getNames` function, and generates an array with the names reversed.
+</details>
+
+### Challenge 2
+
+<details>
+<summary>Blah</summary>
+Write a function that appends ' The end.' to a string, and returns the modified string. The original source string should not be modified.
+
+------------------------------------------------------------------------------------------------ */
+
+const appendTheEnd = (str) => {
+  // Solution code here...
+
+};
+
+Certainly! To append " The end." to a string without modifying the original string, you can use string concatenation or template literals to create a new string that includes the original string along with the desired addition.
+
+Here's the implementation for the `appendTheEnd` function:
+
+```javascript
+const appendTheEnd = (str) => {
+  return str + ' The end.';
+};
+```
+
+Alternatively, using template literals:
+
+```javascript
+const appendTheEnd = (str) => {
+  return `${str} The end.`;
+};
+```
+
+Both versions achieve the same result of creating a new string by appending " The end." to the input string without altering the original string.
+
+You can use this function as follows:
+
+```javascript
+const originalString = 'This is the original string.';
+const modifiedString = appendTheEnd(originalString);
+
+console.log(originalString); // Output: 'This is the original string.'
+console.log(modifiedString); // Output: 'This is the original string. The end.'
+```
+
+The `appendTheEnd` function takes a string as input, creates a modified version of that string with " The end." appended to it, and returns the modified string, leaving the original string unchanged.
+</details>
+
+### Challenge 3
+
+<details>
+<summary>Blah</summary>
+blah blah blah
+CHALLENGE 3
+
+Write a function that accepts an array and copies the first element to the end of the array. The change should be reflected in the source array that was passed in to the function. That is, the function should modify the array 'in place'.
+
+Do not use a return statement.
+
+For example:
+const a = [1, 2, 3];
+appendFirstToLast(a);
+console.log(a) prints [1, 2, 3, 1]
+------------------------------------------------------------------------------------------------ */
+
+const appendFirstToLast = (arr) => {
+  // Solution code here...
+};
+
+Certainly! To modify the array in place by appending its first element to the end, you can use array methods like `push()` to add the first element to the end of the array.
+
+Here's the implementation for the `appendFirstToLast` function:
+
+```javascript
+const appendFirstToLast = (arr) => {
+  arr.push(arr[0]);
+};
+```
+
+This function takes an array as an argument and modifies it directly by using the `push()` method to add the first element of the array (`arr[0]`) to the end.
+
+For example:
+
+```javascript
+const a = [1, 2, 3];
+appendFirstToLast(a);
+console.log(a); // Output: [1, 2, 3, 1]
+```
+
+When `appendFirstToLast(a)` is called with the array `[1, 2, 3]`, it modifies the array by adding the first element (1) to the end, resulting in `[1, 2, 3, 1]`. This change is reflected in the source array `a` as it modifies the array in place.
+</details>
+
+### Challenge 4
+
+<details>
+<summary>Blah</summary>
+HALLENGE 4
+
+Write a function that accepts an object and an integer as arguments and adds a new property to the object called yearBorn. The value of the yearBorn property should be the integer that was passed in.
+
+The change should be reflected in the source object that was passed in to the function. That is, the function should modify the object 'in place'.
+
+Do not use a return statement.
+
+For example:
+const octavia = { fullName: 'Octavia Estelle Butler' };
+addBirthYearProperty(octavia, 1947);
+console.log(a) prints { fullName: 'Octavia Estelle Butler', yearBorn: 1947 }
+------------------------------------------------------------------------------------------------ */
+
+const addBirthYearProperty = (obj, year) => {
+  // Solution code here...
+};
+
+Certainly! To modify the object in place by adding a new property called `yearBorn` with a specified integer value, you can directly assign a new property to the object using the provided `year` parameter.
+
+Here's the implementation for the `addBirthYearProperty` function:
+
+```javascript
+const addBirthYearProperty = (obj, year) => {
+  obj.yearBorn = year;
+};
+```
+
+This function takes an object (`obj`) and an integer (`year`) as arguments and modifies the object by adding a new property called `yearBorn` with the value of the `year` parameter.
+
+For example:
+
+```javascript
+const octavia = { fullName: 'Octavia Estelle Butler' };
+addBirthYearProperty(octavia, 1947);
+console.log(octavia); // Output: { fullName: 'Octavia Estelle Butler', yearBorn: 1947 }
+```
+
+When `addBirthYearProperty(octavia, 1947)` is called with the `octavia` object and the year `1947`, it modifies the object by adding the `yearBorn` property with the value `1947`. This change is reflected in the source object `octavia` as it modifies the object in place.
+</details>
+
+### Challenge 5
+
+
+
 <details>
 <summary>Blah</summary>
 blah blah blah
 </details>
+
+
+CHALLENGE 5 - Stretch Goal
+
+Write a function that accepts an array of people objects and adds a new property called isAuthor to each object in the list. Set the value of the new property to true.
+
+The function should modify the object in place. Do not use a return statement.
+
+For example:
+const people = [{ fullName: 'Octavia Butler' }, { fullName: 'Ray Bradbury' }];
+setStatusAsAuthor(people);
+console.log(people[1].isAuthor) prints true
+------------------------------------------------------------------------------------------------ */
+
+const setStatusAsAuthor = (people) => {
+  // Solution code here...
+};
+
+Absolutely! To modify each object in the array by adding a new property called `isAuthor` with the value `true`, you can loop through the array using `forEach()` or a `for` loop and directly assign the `isAuthor` property to each object.
+
+Here's an implementation using `forEach()`:
+
+```javascript
+const setStatusAsAuthor = (people) => {
+  people.forEach(person => {
+    person.isAuthor = true;
+  });
+};
+```
+
+This function, `setStatusAsAuthor`, takes an array of people objects and modifies each object by adding a new property `isAuthor` with the value `true`.
+
+For example:
+
+```javascript
+const people = [{ fullName: 'Octavia Butler' }, { fullName: 'Ray Bradbury' }];
+setStatusAsAuthor(people);
+console.log(people[1].isAuthor); // Output: true
+```
+
+When `setStatusAsAuthor(people)` is called with the `people` array, it modifies each object in the array by adding the `isAuthor` property with the value `true`. This change is reflected in the `people` array, and accessing `people[1].isAuthor` returns `true`.
+
+## Day Ten
+
+
+
+### CHALLENGE 1 - Review
+
+
+Write a function named returnTen, takes in a string and uses split and splice to return the last 10 characters from that string as elements of an array.
+
+```javascript
+function returnTen(str){
+  return str.split('').splice(-10);
+}
+```
+
+Explanation:
+- The `returnTen` function takes in a string `str`.
+- `.split('')` splits the string into an array of characters.
+- `.splice(-10)` extracts the last 10 characters from the array.
+
+### CHALLENGE 2
+
+Write a function named findMax that takes in a matrix of positive numbers and returns the number with the highest value.
+
+For example:
+[
+  [1, 3, 4, 5],
+  [4, 5, 6],
+  [23, 5, 5]
+]
+
+return: 23
+
+```javascript
+const findMax = (matrix) => {
+  let max = Number.NEGATIVE_INFINITY;
+  for (let arr of matrix) {
+    for (let num of arr) {
+      if (num > max) {
+        max = num;
+      }
+    }
+  }
+  return max;
+};
+```
+
+Explanation:
+- The `findMax` function receives a matrix of positive numbers.
+- `Number.NEGATIVE_INFINITY` initializes `max` as the smallest possible number.
+- It iterates through each array within the matrix and each number within those arrays.
+- It compares each number to `max`, updating `max` if the number is greater.
+
+### CHALLENGE 3
+
+Write a function named totalSum that takes in a matrix of numbers and returns the totalSum of all the numbers.
+
+For example:
+[
+  [1, 3, 4, 5],
+  [4, 5, 1],
+  [2, 5, 5]
+]
+
+return: 35
+
+```javascript
+const totalSum = (matrix) => {
+  return matrix.reduce((acc, curr) => acc + curr.reduce((sum, num) => sum + num, 0), 0);
+};
+```
+
+Explanation:
+- `reduce` is used to flatten and sum the matrix.
+- The outer `reduce` goes through each array in the matrix.
+- The inner `reduce` sums up the numbers within each array.
+- The initial value for both `reduce` functions is set to `0`.
+
+### CHALLENGE 4
+
+/* ------------------------------------------------------------------------------------------------
+CHALLENGE 4
+
+You friend Pat has a chain of stores around the greater Seattle area. He specializes in selling salmon cookies. Pat has data for the hourly sales of cookies per hour for each store. He wants to create an array of the total number of cookies sold per hour for all of his stores combined.
+
+Write a function named grandTotal that adds up the cookies sales for each hour of operation for all of the stores combined. For example, the first element in the hourlySales array should be the sum of the cookies sold in the 9:00 a.m. hour at all five stores combined.
+
+For this example, the total at 9:00 a.m. is 17 + 26 + 7 + 5 + 33, or 88 total cookies.
+
+Return the array of the total number of cookies sold per hour for all of the stores combined.
+------------------------------------------------------------------------------------------------ */
+
+```javascript
+const hoursOpen = ['9 a.m.', '10 a.m.', '11 a.m.', '12 p.m.', '1 p.m.', '2 p.m.', '3 p.m.', '4 p.m.', '5 p.m.', '6 p.m.', '7 p.m.', '8 p.m.'];
+
+const firstPike = [17, 18, 23, 24, 24, 12, 13, 27, 30, 20, 24, 18];
+const seaTac = [26, 5, 5, 59, 23, 39, 38, 20, 30, 7, 59, 43];
+const seattleCenter = [7, 14, 19, 22, 15, 4, 23, 27, 28, 23, 1, 29];
+const capHill = [5, 85, 58, 51, 50, 13, 33, 32, 47, 94, 31, 62];
+const alkiBeach = [33, 31, 147, 130, 27, 93, 38, 126, 141, 63, 46, 17];
+
+const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
+
+const grandTotal = (stores) => {
+  return stores[0].map((_, index) => stores.reduce((acc, store) => acc + store[index], 0));
+};
+```
+
+Explanation:
+
+
+```javascript
+const grandTotal = (stores) => {
+  return stores[0].map((_, index) => stores.reduce((acc, store) => acc + store[index], 0));
+};
+```
+
+This function uses the `map()` function on `stores[0]`, assuming that all stores have the same length of sales data (which seems to be the case according to your example). 
+
+1. `stores[0].map((_, index) => ...)`:
+   - It uses `map()` to iterate over the sales data for one store (in this case, `firstPike`).
+   - The `_` is a placeholder for the elements in the `stores[0]` array (but it's not used inside the map function).
+   - The `index` represents the index of each hour in the `stores[0]` array (`firstPike` array in this case).
+
+2. `stores.reduce((acc, store) => acc + store[index], 0)`:
+   - The `reduce()` function is used on the `stores` array.
+   - For each hour (indexed by `index`), it iterates through each store (`firstPike`, `seaTac`, `seattleCenter`, `capHill`, `alkiBeach`).
+   - It sums up the sales for that specific hour across all stores.
+   - `acc` is the accumulator, starting from 0.
+   - `store[index]` accesses the sales value at the specific `index` (hour) in each store.
+   - It returns an array containing the total sales for each hour across all stores combined.
+
+The resulting array will contain the total sales at each hour across all stores combined, calculated by summing the sales data for each hour from all the stores.
+
+This function essentially transposes the data, summing up the sales at each hour across all stores.
+
+In JavaScript, when you're using the `map()` function but you don't actually need to use the value of the elements in the array, you can use a placeholder to represent each element. The `_` (underscore) is often used as a convention for such a placeholder. 
+
+In this specific scenario:
+```javascript
+stores[0].map((_, index) => ...)
+```
+
+The `map()` function expects a callback function that iterates over each element of the array. However, in this case, the callback function doesn't use the value of the elements themselves (`_`), but instead relies solely on the index to perform the necessary operations.
+
+By using `_` as a placeholder, it serves as a way to indicate to other developers that the value of the element itself is not being used within the callback function. It's just a convention to communicate that the value is not relevant or needed for the particular operation being performed inside the callback function.
+
+
+In the expression `stores.reduce((acc, store) => acc + store[index], 0)`, the `reduce()` function is being utilized.
+
+Here's a breakdown of how this works:
+
+- `reduce()` is a higher-order function that iterates over an array, performing some operation on each element and accumulating a final result.
+- The first argument passed to `reduce()` is a callback function that handles the accumulation process. It takes two parameters:
+  - `acc` (accumulator): This parameter stores the intermediate result or the accumulated value.
+  - `store`: This represents each store array in the `stores` array.
+- The second argument of `reduce()` is the initial value for the accumulator. In this case, it's set to `0`.
+
+Inside the callback function:
+
+- `acc + store[index]` is the logic used to accumulate the result. It adds the value of `store[index]` to the accumulator (`acc`).
+- `store[index]` accesses the element at the given `index` from each `store` array. The `index` is determined by the iteration performed by `map()` on the `stores[0]` array.
+
+In summary, the `reduce()` function takes each element from the `stores` array, accesses the element at the specific `index`, and accumulates the sum of these values for each index across all stores.
+
+### CHALLENGE 5
+
+/* ------------------------------------------------------------------------------------------------
+CHALLENGE 5
+
+Pat has decided that he would also like to organize his data as objects containing the number of cookies sold per hour and the time.
+
+Here is sample data for the 9:00 sales: { sales: '88 cookies', time: '9 a.m.' }.
+
+Write a function named salesData that uses forEach to iterate over the hourlySales array and create an object for each hour. Return an array of the formatted data.
+------------------------------------------------------------------------------------------------ */
+
+
+
+```javascript
+const salesData = (hours, data) => {
+  const result = [];
+  hours.forEach((hour, i) => {
+    result.push({ sales: `${data[i]} cookies`, time: hour });
+  });
+  return result;
+};
+```
+
+
+
+Challenge 5 involves writing a function called `salesData` that takes two arrays as parameters: `hours` and `data`. The `hours` array represents the hours of the day, and the `data` array represents the number of cookies sold per hour. 
+
+The goal of the `salesData` function is to create an array of objects, where each object contains two properties: `sales` (representing the number of cookies sold during an hour) and `time` (representing the hour of the sale).
+
+Here's a breakdown of the steps to solve this challenge:
+
+1. **Looping through the `data` array using `forEach()`:** 
+   Iterate over the `data` array to access each value representing the number of cookies sold per hour.
+
+2. **Creating objects for each hour:**
+   Inside the loop, create an object for each hour using the data from the `data` and `hours` arrays.
+
+3. **Formatting the object with `sales` and `time` properties:**
+   Each object should contain two properties:
+   - `sales`: Set this property to the value representing the number of cookies sold during a specific hour.
+   - `time`: Set this property to the corresponding hour from the `hours` array.
+
+4. **Storing the created objects in an array:**
+   Push each created object into a new array that will be returned at the end.
+
+Here's an example implementation:
+
+```javascript
+const salesData = (hours, data) => {
+  const result = [];
+
+  data.forEach((cookiesSold, index) => {
+    const hour = hours[index];
+    const salesObj = {
+      sales: cookiesSold,
+      time: hour,
+    };
+    result.push(salesObj);
+  });
+
+  return result;
+};
+```
+
+For instance, if you have arrays:
+```javascript
+const hours = ['9 a.m.', '10 a.m.', '11 a.m.', '12 p.m.', '1 p.m.', '2 p.m.', '3 p.m.', '4 p.m.', '5 p.m.', '6 p.m.', '7 p.m.', '8 p.m.'];
+const data = [88, 72, 63, 56, 90, 82, 74, 68, 91, 75, 66, 80];
+```
+
+Calling `salesData(hours, data)` will return an array of objects like this:
+```javascript
+[
+  { sales: 88, time: '9 a.m.' },
+  { sales: 72, time: '10 a.m.' },
+  { sales: 63, time: '11 a.m.' },
+  // ... and so on
+]
+```
+
+Each object in the resulting array represents an hour and the number of cookies sold during that hour.
+
+### CHALLENGE 6
+
+/* ------------------------------------------------------------------------------------------------
+CHALLENGE 6
+
+Write a function named howManyTreats that will return the quantity of treats you need to pick up from the pet store today from this array. The structure of the array will not change.
+------------------------------------------------------------------------------------------------ */
+
+const errands = [
+  {
+    store: 'Grocery store',
+    items: [{ name: 'Eggs', quantity: 12 }, { name: 'Milk', quantity: 1 }, { name: 'Apples', quantity: 3 }]
+  },
+  {
+    store: 'Drug store',
+    items: [{ name: 'Toothpaste', quantity: 1 }, { name: 'Toothbrush', quantity: 3 }, { name: 'Mouthwash', quantity: 1 }]
+  },
+  {
+    store: 'Pet store',
+    items: [{ name: 'Cans of food', quantity: 8 }, { name: 'Treats', quantity: 24 }, { name: 'Leash', quantity: 1 }]
+  }
+];
+
+```javascript
+const howManyTreats = (arr) => {
+  return arr.find(store => store.store === 'Pet store').items.find(item => item.name === 'Treats').quantity;
+};
+```
+
+Explanation:
+- `find` is employed to get the store object for the 'Pet store'.
+- Another `find` method extracts the item object for 'Treats'.
+- It retrieves the `quantity` property from the 'Treats' item.
+
+These methods were chosen because they are well-suited for their respective tasks, such as iterating through arrays, finding specific elements, or performing calculations on matrix data.
+
+
+
+### CHALLENGE 7 - battleship
+/* ------------------------------------------------------------------------------------------------
+CHALLENGE 7 - Stretch Goal
+
+Write a function named battleship that accepts a 2D array and two numbers: a row coordinate and a column coordinate.
+
+Return "hit" or "miss" depending on if there's part of a boat at that position in the array. Assume the array has only one of two values at each index. '#' for part of a boat, or ' ' for open water.
+
+Here is a sample board:
+[
+  ['#', ' ', '#', ' '],
+  ['#', ' ', '#', ' '],
+  ['#', ' ', ' ', ' '],
+  [' ', ' ', '#', '#'],
+]
+
+The top row of the board is considered row zero and row numbers increase as they go down.
+------------------------------------------------------------------------------------------------ */
+
+This function determines whether a given position on a battleship board is a "hit" or "miss." It takes a 2D array representing the battleship board and two coordinates: a row and a column. The function checks if the specified position on the board contains a '#' representing part of a boat or ' ' representing open water.
+
+*Solution*:
+
+```javascript
+const battleship = (board, row, col) => {
+  return board[row][col] === '#' ? 'hit' : 'miss';
+};
+```
+
+The `battleship` function accesses the element at the given `row` and `col` indices in the `board` array. If the element is '#', it returns 'hit'; otherwise, it returns 'miss'.
+
+### CHALLENGE 8 - calculateProduct
+
+/* ------------------------------------------------------------------------------------------------
+CHALLENGE 8 - Stretch Goal
+
+Write a function named calculateProduct that takes in a two-dimensional array of numbers, multiplies all of the numbers in each array, and returns the final product. This function should work for any number of inner arrays.
+
+For example, the following input returns a product of 720: [[1,2], [3,4], [5,6]]
+------------------------------------------------------------------------------------------------ */
+
+This function calculates the product of all numbers in each sub-array of a 2D array and returns the final product. It multiplies all the numbers in each inner array together.
+
+*Solution*:
+
+```javascript
+const calculateProduct = (numbers) => {
+  return numbers.map(arr => arr.reduce((acc, num) => acc * num, 1)).reduce((acc, prod) => acc * prod, 1);
+};
+```
+
+The `calculateProduct` function uses `map()` to iterate through each sub-array in the `numbers` array. It uses `reduce()` to multiply all the numbers within each sub-array and returns an array of the products. Finally, it uses another `reduce()` to multiply all the products together to get the final product.
+
+### CHALLENGE 9 - averageDailyTemperature
+
+/* ------------------------------------------------------------------------------------------------
+CHALLENGE 9 - Stretch Goal
+
+Write a function named averageDailyTemperature that accepts a two-dimensional array representing average daily temperatures grouped week-by-week.
+
+Calculate the average daily temperature during that entire period. Your output should be a single number. Write your function so it could accept an array with any number of weeks given to it.
+------------------------------------------------------------------------------------------------ */
+
+// Real daily average temperatures for Seattle, October 1-28 2017
+const weeklyTemperatures = [
+  [66, 64, 58, 65, 71, 57, 60],
+  [57, 65, 65, 70, 72, 65, 51],
+  [55, 54, 60, 53, 59, 57, 61],
+  [65, 56, 55, 52, 55, 62, 57],
+];
+
+This function calculates the average daily temperature from a 2D array representing average daily temperatures grouped week-by-week.
+
+*Solution*:
+
+```javascript
+const averageDailyTemperature = (weather) => {
+  const allTemps = weather.reduce((acc, week) => acc.concat(week), []);
+  const sum = allTemps.reduce((acc, temp) => acc + temp, 0);
+  return sum / allTemps.length;
+};
+```
+
+The `averageDailyTemperature` function first flattens the 2D `weather` array into a single array (`allTemps`) using `reduce()` and `concat()`. Then, it calculates the sum of all temperatures and divides it by the total number of temperatures to get the average.
+
+### CHALLENGE 10 - lowestWeeklyAverage
+
+/* ------------------------------------------------------------------------------------------------
+CHALLENGE 10 - Stretch Goal
+
+Write a function named lowestWeeklyAverage that accepts a two-dimensional array of daily temperatures grouped week-by-week.
+
+Calculate the average temperature for each week and return the value of the lowest weekly average temperature.
+
+For example, in the data set below, the lowest weekly average is 46, which is the average of the temperatures in week 2. All other weeks have average temperatures that are greater than 46.
+------------------------------------------------------------------------------------------------ */
+
+let lowestWeeklyTemperatureData = [
+  [33, 64, 58, 65, 71, 57, 60],
+  [40, 45, 33, 53, 44, 59, 48],
+  [55, 54, 60, 53, 59, 57, 61],
+  [65, 56, 55, 52, 55, 62, 57],
+];
+
+This function calculates the average temperature for each week and returns the value of the lowest weekly average temperature.
+
+*Solution*:
+
+```javascript
+const lowestWeeklyAverage = (weather) => {
+  const weeklyAverages = weather.map(week => week.reduce((acc, temp) => acc + temp, 0) / week.length);
+  return Math.min(...weeklyAverages);
+};
+```
+
+The `lowestWeeklyAverage` function uses `map()` to calculate the average temperature for each week by summing up the temperatures and dividing by the number of temperatures in each week. Then, it uses `Math.min()` to find the lowest average temperature among all the weeks.
+
+### CHALLENGE 11 - excel
+
+/* ------------------------------------------------------------------------------------------------
+CHALLENGE 11 - Stretch Goal
+
+Write a function called excel that accepts a string representing rows and columns in a table.
+
+Rows are seperated by newline "\n" characters. Columns are seperated by commas. For example, '1,1,1\n4,4,4\n9,9,9' represents a 3x3 table.
+
+The function should parse the string as rows and columns and compute the sum of the values for each row. Return an array with the sum of the values in each row.
+
+For example, excel('1,1,1\n4,4,4\n9,9,9') returns [3, 12, 27].
+------------------------------------------------------------------------------------------------ */
+
+This function computes the sum of values for each row in a table represented by a string.
+
+*Solution*:
+
+```javascript
+const excel = (str) => {
+  const rows = str.split('\n');
+  return rows.map(row => row.split(',').reduce((acc, val) => acc + parseInt(val), 0));
+};
+```
+
+The `excel` function first splits the input string into rows using `split('\n')`. Then, it uses `map()` to split each row by commas (`,`) and computes the sum of the values in each row using `reduce()`. Finally, it returns an array containing the sum of values for each row.
+```
+
