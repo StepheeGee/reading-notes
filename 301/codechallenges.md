@@ -1507,3 +1507,8 @@ const listFoods = (recipe) => {
 ```
 
 *Explanation*: The function `listFoods` extracts the food names from the `ingredients` array of the `gruffaloCrumble` recipe. It uses the `slice` method to get the substring starting from the second space in each ingredient, effectively removing the amount and units.
+
+<details>
+<summary>Blah</summary>
+blah blah blah
+</details>
