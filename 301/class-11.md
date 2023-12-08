@@ -12,7 +12,7 @@ This markdown file explores the fundamental differences between SQL and NoSQL da
 
 Fill in the chart below with five differences between SQL and NoSQL databases:
 
-Certainly! Here's the information formatted in Markdown:
+
 
 ## SQL vs NoSQL Databases
 
@@ -26,80 +26,6 @@ Certainly! Here's the information formatted in Markdown:
 
 Chart Credit- ChatGPT
 
-### SQL Database
-
-- **Good Fit**: Structured, highly organized data with predefined schemas.
-- **Real-world Example**: Financial data in a banking application where transactions, accounts, and user details need structured relationships.
-
-### NoSQL Database
-- **Good Fit**: Unstructured or semi-structured data, where flexibility is crucial.
-- **Real-world Example**: Social media platforms storing user-generated content like comments, posts, and user profiles.
-
-### Hierarchical Data Storage
-- **Best**: NoSQL databases are often better for hierarchical data due to their flexible schema and ability to handle nested data structures efficiently.
-
-### Scalability
-- **Best**: NoSQL databases, particularly when scaling horizontally (across multiple servers), due to their distributed architecture.
-
-### Definitions
-- **SQL**: Stands for Structured Query Language, used for managing relational databases.
-- **Relational Database**: A database that organizes data into tables with predefined relationships between them.
-- **Schema**: A structure that defines the organization of data in a database.
-- **NoSQL Database**: A type of database that doesn't rely on the traditional tabular relations seen in SQL databases.
-
-### NoSQL Database Characteristics
-- **Structure**: Varies based on the type (document-oriented, key-value stores, graph databases, etc.).
-- **Flexibility**: NoSQL databases tend to be more flexible due to their schema-less or flexible schema nature.
-
-### MongoDB Database
-- **Contents**: Collections of documents (JSON-like objects) organized within databases.
-
-### Flexibility
-- **More Flexible**: NoSQL databases, particularly MongoDB, due to their schema flexibility, enabling easier adaptation to changing data needs.
-
-### Disadvantage of NoSQL
-- **Disadvantage**: Lack of standardization and maturity compared to SQL databases, leading to potential inconsistency in data management and queries.
-
-### Assignment
-#### Summary/Statement:
-This assignment delves into comparing SQL and NoSQL databases, exploring their differences, suitable data types, and advantages/disadvantages.
-
-#### Reading:
-[MongoDB](https://www.thegeekstuff.com/2014/01/sql-vs-nosql-db/?utm_source=tuicool)
-
-1. **Question 1?**  
-   - Answer to Question 1.
-
-2. **Question 2?**  
-   - Answer to Question 2.
-
-3. **Question 3?**  
-   - Answer to Question 3.
-
-4. **Question 4?**  
-   - Answer to Question 4.
-
-5. **Question 5?**  
-   - Answer to Question 5.
-
-6. **Question 6?**  
-   - Answer to Question 6.
-
-7. **Question 7?**  
-   - Answer to Question 7.
-
-#### Video:
-[sql vs nosq](sql vs nosql)
-
-#### Resources:
-- [Link to Resource 1 Title](Link)
-
-#### Bookmark and Review:
-- [Mongoose API](https://mongoosejs.com/docs/api.html#Model)
-- [React Router](https://reactrouter.com/en/6.20.1/router-components/browser-router)
-
-#### Things I want to know more about:
-- Whoa. Databases have frameworks too? So this means I have to learn modeling functions to design the database and organize the data?
 
 1. **What kind of data is a good fit for an SQL database?**  
    - Structured, highly organized data with predefined schemas.
