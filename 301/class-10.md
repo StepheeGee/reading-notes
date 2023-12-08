@@ -22,6 +22,8 @@ Prepared 12.7.23
 
    [Example Diagram](10.tldr)
 
+   ![Screenshot](SS.png)
+
 5. **What causes a Stack Overflow?**
    - A Stack Overflow occurs when the call stack exceeds its maximum size, usually due to recursive function calls without a proper base case to stop the recursion.
 
