@@ -1,6 +1,7 @@
 # MongoDB, Mongoose and Data Modeling
 
 ## Class 10: 12.11.23
+
 Prepared 12.8.23
 
 **Summary/Statement:** 
@@ -85,5 +86,4 @@ Chart Credit- ChatGPT
 ### Things I want to know more about
 
 - Whoa. Databases have frameworks too? So this means I have to learn modeling functions to design the database and organize the data?
-
 
