@@ -159,7 +159,6 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
-const Joi = require('joi'); // Required for validation
 
 const Book = require('./books.js');
 
@@ -181,12 +180,7 @@ app.get('/test', (request, response) => {
   response.status(200).send('Welcome to Our Server!');
 });
 
-app.get('/books', getBooks);
-app.post('/books', postBooks);
-app.delete('/books/:bookID', deleteBooks);
-app.put('/books/:bookID', updateBook);
-
-async function getBooks(request, response, next){
+app.get('/books', async (request, response, next) => {
   try {
     let results = await Book.find();
     console.log(results);
@@ -194,20 +188,13 @@ async function getBooks(request, response, next){
   } catch (error) {
     next(error);
   }
-}
+});
 
-async function postBooks(request, response, next) {
+app.post('/books', async (request, response, next) => {
   try {
-    const schema = Joi.object({
-      title: Joi.string().required(),
-      description: Joi.string().required(),
-      status: Joi.boolean().required(),
-    });
-
-    const { error } = schema.validate(request.body);
-
-    if (error) {
-      return response.status(400).json({ error: error.details[0].message });
+    // Validation logic for input
+    if (!request.body.title || !request.body.description || !request.body.status) {
+      return response.status(400).json({ error: 'Missing required fields' });
     }
 
     let createdBook = await Book.create(request.body);
@@ -215,9 +202,9 @@ async function postBooks(request, response, next) {
   } catch (error) {
     next(error);
   }
-}
+});
 
-async function deleteBooks(request, response, next){
+app.delete('/books/:bookID', async (request, response, next) => {
   try {
     let id = request.params.bookID;
     await Book.findByIdAndDelete(id);
@@ -225,9 +212,9 @@ async function deleteBooks(request, response, next){
   } catch (error) {
     next(error);
   }
-}
+});
 
-async function updateBook(request, response, next){
+app.put('/books/:bookID', async (request, response, next) => {
   try {
     let id = request.params.bookID;
     let data = request.body;
@@ -242,7 +229,7 @@ async function updateBook(request, response, next){
   } catch (error) {
     next(error);
   }
-}
+});
 
 app.get('*', (request, response) => {
   response.status(404).send('Not available');
@@ -253,6 +240,7 @@ app.use((error, request, response, next) => {
 });
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
+
 ```
 #### 8. JS Files
 
