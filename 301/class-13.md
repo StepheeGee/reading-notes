@@ -1,6 +1,6 @@
 # More CRUD
 
-## Class: 12.13.23
+## Class 13: 12.13.23
 Prepared 12.12.23
 
 **Summary/Statement:**  This reading assignment aims to explore the relationship between REST, CRUD, and the practical steps involved in designing and implementing RESTful APIs. 
