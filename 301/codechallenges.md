@@ -2363,3 +2363,137 @@ let findShortest = (data) => {
   return shortestCharacter.name;
 };
 ```
+
+# Day Thirteen
+
+### Challenge 1 - `sortByChildren`
+Write a function named sortByChildren that sorts the characters below by the number of children in each house (fewest to most). If a house has the same number of children, sort alphabetically by house name.
+
+------------------------------------------------------------------------------------------------ */
+let characters = [
+  {
+    name: 'Eddard',
+    spouse: 'Catelyn',
+    children: ['Robb', 'Sansa', 'Arya', 'Bran', 'Rickon'],
+    house: 'Stark'
+  },
+  {
+    name: 'Jon A.',
+    spouse: 'Lysa',
+    children: ['Robin'],
+    house: 'Arryn'
+  },
+  {
+    name: 'Cersei',
+    spouse: 'Robert',
+    children: ['Joffrey', 'Myrcella', 'Tommen'],
+    house: 'Lannister'
+  },
+  {
+    name: 'Daenarys',
+    spouse: 'Khal Drogo',
+    children: ['Drogon', 'Rhaegal', 'Viserion'],
+    house: 'Targaryen'
+  },
+  {
+    name: 'Mace',
+    spouse: 'Alerie',
+    children: ['Margaery', 'Loras'],
+    house: 'Tyrell'
+  },
+  {
+    name: 'Jon S.',
+    spouse: null,
+    children: [],
+    house: 'Snow'
+  },
+  {
+    name: 'Euron',
+    spouse: null,
+    children: [],
+    house: 'Greyjoy'
+  }
+];
+
+```javascript
+const sortByChildren = (charArray) => {
+  return charArray.sort((a, b) => {
+    if (a.children.length !== b.children.length) {
+      return a.children.length - b.children.length;
+    } else {
+      return a.house.localeCompare(b.house);
+    }
+  });
+};
+```
+The goal is to sort the characters array by the number of children in each house, from fewest to most. If houses have the same number of children, sort them alphabetically by house name.
+The solution would involve using the sort() method, comparing the length of the children array in each object and, if equal, sorting them by the house property using localeCompare().
+
+### Challenge 2 - `containsW`
+
+Write a function named containsW that takes in a string. This function should use a regular expression pattern to return true if the string contains the letter 'w' in lower case or false if it does not.
+
+```javascript
+const containsW = (str) => {
+  return /w/.test(str);
+};
+```
+This function should check if a given string contains the letter 'w' in lowercase.
+The solution involves using a regular expression pattern to check for the presence of 'w' using .test() method.
+
+### Challenge 3 - `isNum`
+
+Write a function named isNum that takes in a string or number of any length. This function should use a regular expression pattern to return true if the input contains a number, and false if the input does not contain a number.
+
+For example:
+12345 returns true
+'12345' returns true
+'h3llo world' returns true
+'hello world' returns false
+
+```javascript
+const isNum = (input) => {
+  return /\d/.test(input);
+};
+```
+The task is to determine whether a given string or number contains a digit.
+A regular expression pattern can be used to detect any digit in the input using .test().
+
+### Challenge 4 - `containsWorld`
+
+Write a function named containsWorld that takes in a string or number of any length. This function should use a regular expression pattern to return true if the input contains the word 'world' all in lower-case letters, and false if the input does not.
+
+```javascript
+const containsWorld = (input) => {
+  return /world/.test(input);
+};
+```
+The goal is to check if a given string contains the word 'world' in lowercase.
+A regular expression pattern that matches the word 'world' can be employed using .test().
+
+
+### Challenge 5 - `isCapitalized`
+
+Write a function named isCapitalized that takes in a string. This function should use a regular expression pattern to match all words that begin with a capital letter. It should only match words, not punctuation.
+
+Return an array containing all the matches.
+```javascript
+const isCapitalized = (str) => {
+  return str.match(/\b[A-Z]\w*/g) || [];
+};
+```
+The aim is to find words that start with a capital letter in a string.
+A regular expression pattern to match such words (excluding punctuation) can be created using the \b boundary selector to find word boundaries and the [A-Z][a-z]* pattern to match capitalized words.
+
+### Challenge 6 - `citiesAtoJ`
+
+Write a function named citiesAtoJ that takes in an array of city names and uses a regular expression pattern to return a new array containing any cities that begin with the letters A through J, inclusive.
+
+```javascript
+const citiesAtoJ = (arr) => {
+  return arr.filter((city) => /^[A-J]/i.test(city));
+};
+```
+This function needs to return an array containing cities that start with letters A through J (inclusive) from the input array.
+A regular expression pattern can be utilized to filter cities that start with these letters.
+

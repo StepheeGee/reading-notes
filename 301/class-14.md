@@ -1,10 +1,10 @@
-# TDiversity & Inclusion in the Tech Industry
+# Diversity & Inclusion in the Tech Industry
 
 
 ## Class 14: 12.14.23
 Prepared 12.13.23
 
-**Summary/Statement:** Brief summary or statement about the assignment's focus and objectives.
+**Summary/Statement:** Today, we're talking about diversity in the workplace. First stop - gender. 
 
 ### Reading
 
@@ -38,4 +38,4 @@ A diverse company like Airbnb, known for its global presence, has a diverse user
 
 ### Things I want to know more about
 
-- Question you want more information on.
+- What are the diversity and inclusion statistics for race in the tech industry. 
