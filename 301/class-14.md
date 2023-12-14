@@ -35,7 +35,8 @@ Diverse companies often perform better due to a variety of perspectives and expe
 
 A diverse company like Airbnb, known for its global presence, has a diverse user base with people from various backgrounds, cultures, and preferences. By having a diverse workforce that mirrors this user base, Airbnb can understand and cater to the diverse needs and preferences of its customers more effectively. For instance, having employees from different cultures and languages can help design better customer experiences and services that resonate with a broader audience. This alignment between a diverse workforce and diverse user base contributes to their success and relevance in a global market.
 
+Reference: ChatGPT
 
 ### Things I want to know more about
 
-- What are the diversity and inclusion statistics for race in the tech industry. 
+- What are the diversity and inclusion statistics for race in the tech industry?
