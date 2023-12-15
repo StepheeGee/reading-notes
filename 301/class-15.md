@@ -1,4 +1,4 @@
-# Title of the Assignment
+# Authentication
 
 ## Class 15: 12.15.23
 
