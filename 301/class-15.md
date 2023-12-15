@@ -1,8 +1,10 @@
 # Title of the Assignment
 
-## Class: Date
+## Class 15: 12.15.23
 
-**Summary/Statement:** Brief summary or statement about the assignment's focus and objectives.
+Prepared 12.14.23
+
+**Summary/Statement:** OAuth is a flexible protocol that facilitates secure, token-based access to user data without sharing passwords. It enables third-party applications to access resources on behalf of users after authentication, offering various flows to suit different authentication and authorization scenarios. 
 
 ### Reading
 
@@ -60,3 +62,5 @@ Resource: ChatGPT
 ### Things I want to know more about
 
 - What is [this](https://github.com/auth0/node-jsonwebtoken)?
+
+- Are AuthO and OAuth different?
