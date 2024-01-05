@@ -134,7 +134,7 @@
 
 ### Emotional Intelligence
 
-- Self Awareness - I had enough presence of mind during our last project to notice my mood shifts and take time and breaks to nuture my emotions.
+- Self Awareness - I had enough presence of mind during our last project to notice my mood shifts and take time and breaks to nurture my emotions.
 
 ### Bias
 
