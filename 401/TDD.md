@@ -59,3 +59,59 @@ def test_fizz_buzz_fifteen():
   actual = fizz_buzz(15)
   expected = "FizzBuzz"
   assert actual == expected
+
+### Recursion
+
+touch fact.py - module
+mkdir tests
+touch tests/test_fact.py
+
+- In test_fact.py
+from fact import factorial
+
+def test_factorial_one():
+  actual = factorial(1)
+  expected = 1
+  assert actual == expected
+
+def test_factorial_three():
+  actual = factorial(3)
+  expected = 6 
+  assert actual == expected
+
+- In fact.py
+
+def factorial(n):
+  return 1 if n == 1 else n * factorial(n-1)
+
+
+#### Explanation:
+
+factorial(n) is a function that calculates the factorial of a number n.
+It uses recursion, which is a process where a function calls itself directly or indirectly.
+The base case for this recursive function is if n == 1, in which case it returns 1.
+For any other value of n, it multiplies n by the factorial of n-1 (n * factorial(n-1)).
+This recursive process continues until it reaches the base case, which prevents infinite recursion.
+In essence, the function keeps calling itself with smaller values of n until it reaches 1, at which point it starts multiplying those values to compute the factorial.
+
+
+
+#### Explanation using the factorial of 3
+
+
+```python
+def factorial(n):
+    return 1 if n == 1 else n * factorial(n-1)
+
+# Calculate factorial(3)
+factorial(3)
+```
+
+Step 1: `factorial(3)` calls `factorial(2)` because `n` is not 1.
+Step 2: `factorial(2)` calls `factorial(1)` because `n` is not 1.
+Step 3: `factorial(1)` returns 1 because the base case is met (`n` is 1).
+Step 4: `factorial(2)` receives the return value (1) and returns `2 * 1 = 2`.
+Step 5: `factorial(3)` receives the return value (2) and returns `3 * 2 = 6`.
+
+So, each step involves calling the `factorial` function with decreasing values until it reaches the base case (where `n` equals 1), then computes the results back up the chain.
+
