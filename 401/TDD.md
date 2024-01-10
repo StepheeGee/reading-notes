@@ -115,3 +115,13 @@ Step 5: `factorial(3)` receives the return value (2) and returns `3 * 2 = 6`.
 
 So, each step involves calling the `factorial` function with decreasing values until it reaches the base case (where `n` equals 1), then computes the results back up the chain.
 
+Install packages
+pip3 install pytest
+
+
+- Pipenv: Install pipenv using the command 'pip install pipenv'.
+
+- Pipenv: To install dependencies, run the command 'pipenv install'.
+
+Add to a file 
+echo pytest >> requirements.txt
