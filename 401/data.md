@@ -14,7 +14,7 @@ This assignment covers the complexities of Data Structures.
    - If the primary operation is inserting and deleting elements frequently, a linked list or a dynamic array may be more suitable.
    - If there is a need for efficient retrieval of the minimum or maximum element, a heap might be appropriate.
 
-   Understanding the specific requirements and characteristics of the problem at hand helps in selecting the most efficient data structure for the given scenario.
+
 
 2. **Avoiding Infinite Recursive Call Stack:**
    To prevent an infinite recursive call stack, you can take the following precautions:
@@ -27,7 +27,6 @@ This assignment covers the complexities of Data Structures.
 
    - **Iteration or Stack:** In some cases, you might consider converting the recursive algorithm into an iterative one or using an explicit stack to manage the recursion manually. This can help control the depth of recursion and prevent stack overflow.
 
-   By incorporating these practices, you can reduce the risk of infinite recursion and ensure that your recursive algorithms behave correctly.
 
 ## Resources
 
