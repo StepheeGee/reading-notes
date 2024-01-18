@@ -1,9 +1,12 @@
+
+
 # Code Challenges
 
 ## Day 1 - Array Reverse
 
 ### Write a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods available to your language, return an array with elements in reversed order.
 
+```python
 def reverseArray(arr):
     reversed_arr = []
     for i in range(len(arr) - 1, -1, -1):
@@ -14,11 +17,13 @@ def reverseArray(arr):
 original_array = [1, 2, 3, 4, 5]
 reversed_array = reverseArray(original_array)
 print(reversed_array)  # Output: [5, 4, 3, 2, 1]
+```
 
 ## Day 2 - Array Insertion
 
 ### Write a function called insertShiftArray which takes in an array and a value to be added. Without utilizing any of the built-in methods available to your language, return an array with the new value added at the middle index.
 
+```python
 def insertShiftArray(arr, value):
     new_array = []
     mid = len(arr) // 2
@@ -32,22 +37,26 @@ def insertShiftArray(arr, value):
             new_array.append(arr[i - 1])
 
     return new_array
+```
 
 ## Day 3 - Remove Odd Values
 
 ### Write a function called removeOddValues which takes in an array. Without utilizing any of the built-in methods available to your language, return an array with all the odd numbers removed.
 
+```python
 def removeOddValues(arr):
     new_array = []
     for i in range(len(arr)):
         if arr[i] % 2 == 0:
             new_array.append(arr[i])
     return new_array
+```
 
 ## Day 4 - Array Binary Search  
 
 ### Implement a function called `BinarySearch` that takes in a sorted array and a search key. The function returns the index of the array’s element that is equal to the value of the search key. If the element is not in the array, it returns -1.
 
+```python
 def BinarySearch(sorted_array, search_key):
    """
    Performs a binary search on a sorted array to find the index of the search key.
@@ -83,11 +92,13 @@ sorted_array = [4, 8, 15, 16, 23, 42]
 search_key = 15
 result = BinarySearch(sorted_array, search_key)
 print("Index of 15 in the array:", result)  # Output: Index of 15 in the array: 2
+```
 
 ## Day 5 - Linked List
 
 ### Create a Node class and LinkedList class that will have a singly linked list properties like adding element to the beginning of the linked list, check for the existence of the elemnt in the list and print all list elements as a string
 
+```python
 class Node:
     """
     A class representing a node in a linked list.
@@ -183,11 +194,13 @@ print(linked_list)  # "{ 1 } -> { 2 } -> { 3 } -> NULL"
 
 class TargetError:
     pass
+```
 
 ## Day 6 - LinkedList Insertion 
 
 ### Extend a Linked List to allow various insertion methods.
 
+```python
 class Node:
     def __init__(self, value):
         self.value = value
@@ -268,10 +281,11 @@ class LinkedList:
 class TargetError(Exception):
         pass
 
+```
 
 ## Can't Remember the Day - Fibonacci Sequence
 
-
+```python
 def fibonacci(n):
     if n == 0:
         return 0
@@ -279,4 +293,4 @@ def fibonacci(n):
         return 1
     else:
         return fibonacci(n - 1) + fibonacci(n - 2)
-
+```
