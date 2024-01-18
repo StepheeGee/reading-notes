@@ -167,6 +167,7 @@ class LinkedList:
         return result
 
 # Example usage:
+
 linked_list = LinkedList()
 linked_list.insert(3)
 linked_list.insert(2)
