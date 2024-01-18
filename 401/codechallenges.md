@@ -172,7 +172,7 @@ class LinkedList:
         result = ""
         current = self.head
         while current:
-            result += f"{{ {current.value} }} -> "
+            # result += f"{{ {current.value} }} -> "
             current = current.next
         result += "NULL"
         return result
