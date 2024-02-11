@@ -63,5 +63,7 @@
    - `date`: Display the current date and time.
    - `cal`: Display a calendar for the current month.
    - `echo <text>`: Print a message to the console.
+   - `ctr r <text>`: shows the last command that was run
+   -
 
-
+command + shift + l to highlight duplicates
