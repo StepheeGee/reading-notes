@@ -128,8 +128,8 @@ $ touch templates/home.html
 ```django
 <!-- templates/base.html -->
 
-{% load compress %}
-{% load static %}
+{\% load compress \%}
+{\% load static \%}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -138,29 +138,29 @@ $ touch templates/home.html
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Django + Tailwind CSS{% endblock %}</title>
+    <title>{\% block title \%}Django + Tailwind CSS{\% endblock \%}</title>
 
-    {% compress css %}
-    <link rel="stylesheet" href="{% static 'src/output.css' %}">
-    {% endcompress %}
+    {\% compress css \%}
+    <link rel="stylesheet" href="{\% static 'src/output.css' \%}">
+    {\% endcompress \%}
 
 </head>
 
 <body class="bg-green-50">
     <nav class="bg-green-50 border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
         <div class="container flex flex-wrap items-center justify-between mx-auto">
-            <a href="{% url 'home' %}" class="flex items-center">
+            <a href="{\% url 'home' \%}" class="flex items-center">
                 <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Django Things</span>
             </a>
             <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
-                <li><a href="{% url 'home' %}" class="block py-2 pl-3 pr-4 text-white bg-green-700 rounded md:bg-transparent md:text-green-700 md:p-0 dark:text-white" aria-current="page">Home</a></li>
+                <li><a href="{\% url 'home' \%}" class="block py-2 pl-3 pr-4 text-white bg-green-700 rounded md:bg-transparent md:text-green-700 md:p-0 dark:text-white" aria-current="page">Home</a></li>
                 <!-- Add more navigation links as needed -->
             </ul>
         </div>
     </nav>
     <div class="container mx-auto mt-4">
-        {% block content %}
-        {% endblock content %}
+        {\% block content \%}
+        {\% endblock content \%}
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.js"></script>
 </body>
@@ -173,12 +173,12 @@ $ touch templates/home.html
 ```django
 <!-- templates/home.html -->
 
-{% extends "base.html" %}
+{\% extends "base.html" \%}
 
-{% block content %}
+{\% block content \%}
   <h1 class="text-3xl text-green-800">Django + Tailwind CSS + Flowbite</h1>
   <!-- Add your content here -->
-{% endblock content %}
+{\% endblock content \%}
 ```
 
 ## Step 10: Install Tailwind CSS
@@ -313,12 +313,12 @@ $ touch templates/about.html
 ```django
 <!-- templates/about.html -->
 
-{% extends "base.html" %}
+{\% extends "base.html" \%}
 
-{% block content %}
+{\% block content \%}
   <h1 class="text-3xl text-blue-800">About Us</h1>
   <p class="text-gray-600">This is the about page content.</p>
-{% endblock content %}
+{\% endblock content \%}
 ```
 
 3. Update `home.html`:
@@ -326,12 +326,12 @@ $ touch templates/about.html
 ```django
 <!-- templates/home.html -->
 
-{% extends "base.html" %}
+{\% extends "base.html" \%}
 
-{% block content %}
+{\% block content \%}
   <h1 class="text-3xl text-green-800">Django + Tailwind CSS + Flowbite</h1>
   <p class="text-gray-600">This is the home page content.</p>
-{% endblock content %}
+{\% endblock content \%}
 ```
 
 4. Update `base.html`:
@@ -339,8 +339,8 @@ $ touch templates/about.html
 ```django
 <!-- templates/base.html -->
 
-{% load compress %}
-{% load static %}
+{\% load compress \%}
+{\% load static \%}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -349,30 +349,30 @@ $ touch templates/about.html
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Django + Tailwind CSS{% endblock %}</title>
+    <title>{\% block title \%}Django + Tailwind CSS{\% endblock \%}</title>
 
-    {% compress css %}
-    <link rel="stylesheet" href="{% static 'src/output.css' %}">
-    {% endcompress %}
+    {\% compress css \%}
+    <link rel="stylesheet" href="{\% static 'src/output.css' \%}">
+    {\% endcompress \%}
 
 </head>
 
 <body class="bg-green-50">
     <nav class="bg-green-50 border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
         <div class="container flex flex-wrap items-center justify-between mx-auto">
-            <a href="{% url 'home' %}" class="flex items-center">
+            <a href="{\% url 'home' \%}" class="flex items-center">
                 <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Django Things</span>
             </a>
             <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
-                <li><a href="{% url 'home' %}" class="block py-2 pl-3 pr-4 text-white bg-green-700 rounded md:bg-transparent md:text-green-700 md:p-0 dark:text-white" aria-current="page">Home</a></li>
-                <li><a href="{% url 'about' %}" class="block py-2 pl-3 pr-4 text-white bg-green-700 rounded md:bg-transparent md:text-green-700 md:p-0 dark:text-white" aria-current="page">About</a></li>
+                <li><a href="{\% url 'home' \%}" class="block py-2 pl-3 pr-4 text-white bg-green-700 rounded md:bg-transparent md:text-green-700 md:p-0 dark:text-white" aria-current="page">Home</a></li>
+                <li><a href="{\% url 'about' \%}" class="block py-2 pl-3 pr-4 text-white bg-green-700 rounded md:bg-transparent md:text-green-700 md:p-0 dark:text-white" aria-current="page">About</a></li>
                 <!-- Add more navigation links as needed -->
             </ul>
         </div>
     </nav>
     <div class="container mx-auto mt-4">
-        {% block content %}
-        {% endblock content %}
+        {\% block content \%}
+        {\% endblock content \%}
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.js"></script>
 </body>
