@@ -528,12 +528,12 @@ Create a `templates` folder in the project root and add `base.html`:
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Snack Tracker{% endblock %}</title>
+    <title>{\% block title \%}Snack Tracker{\% endblock \%}</title>
 </head>
 <body>
     <div>
         <h1>Welcome to Snack Tracker</h1>
-        {% block content %}{% endblock %}
+        {\% block content \%}{\% endblock \%}
     </div>
 </body>
 </html>
@@ -543,18 +543,18 @@ Now, create `snack_list.html`:
 
 ```html
 <!-- snack_tracker_project/snacks/templates/snack_list.html -->
-{% extends "base.html" %}
+{\% extends "base.html" \%}
 
-{% block title %}Snack List{% endblock %}
+{\% block title \%}Snack List{\% endblock \%}
 
-{% block content %}
+{\% block content \%}
     <h2>Snack List</h2>
     <ul>
-        {% for snack in snacks %}
+        {\% for snack in snacks \%}
             <li>{{ snack.name }} - {{ snack.purchaser.username }} - {{ snack.description }}</li>
-        {% endfor %}
+        {\% endfor \%}
     </ul>
-{% endblock %}
+{\% endblock \%}
 ```
 
 ### Step 10: Update Project URLs
@@ -593,4 +593,157 @@ $ python manage.py runserver
 ```
 
 Visit `http://127.0.0.1:8000/` in your browser to see the Snack List.
+
+
+
+## Model
+
+### Step 1: Create a Django Model (`snacks/models.py`)
+
+```python
+# snacks/models.py
+from django.db import models
+from django.contrib.auth import get_user_model
+
+class Snack(models.Model):
+    name = models.CharField(max_length=64)
+    rating = models.IntegerField(default=0)
+    critical_description = models.TextField()
+    purchaser = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.name
+```
+
+### Step 2: Create Views (`snacks/views.py`)
+
+```python
+# snacks/views.py
+from django.views.generic import TemplateView, ListView, DetailView
+from .models import Snack
+
+class HomeView(TemplateView):
+    template_name = 'home.html'
+
+class SnackListView(ListView):
+    template_name = 'snack_list.html'
+    model = Snack
+    context_object_name = 'snacks'
+
+class SnackDetailView(DetailView):
+    template_name = 'snack_detail.html'
+    model = Snack
+```
+
+### Step 3: Create URLs (`snacks/urls.py`)
+
+```python
+# snacks/urls.py
+from django.urls import path
+from .views import HomeView, SnackListView, SnackDetailView
+
+urlpatterns = [
+    path('', HomeView.as_view(), name='home'),
+    path('snacks/', SnackListView.as_view(), name='snack_list'),
+    path('snacks/<int:pk>/', SnackDetailView.as_view(), name='snack_detail'),
+]
+```
+
+### Step 4: Update Project URLs (`snack_tracker_project/urls.py`)
+
+```python
+# snack_tracker_project/urls.py
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('snacks.urls')),
+]
+```
+
+### Step 5: Create Templates
+
+Create templates for `home.html`, `snack_list.html`, and `snack_detail.html`.
+
+### Step 6: Apply Migrations and Create Superuser
+
+Run the following commands in the terminal:
+
+```bash
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+```
+
+### Step 7: Add Snacks to Database
+
+1. Access the Django admin interface (`/admin`) and log in with the superuser credentials.
+2. Navigate to the "Snacks" section and add snacks.
+
+### Step 8: Use Primary Key (pk) in Templates
+
+In `snack_list.html` and `home.html`, replace instances of `snack.pk` with `snack.id` for linking to the snack detail page.
+
+### Step 9: Update CSS and Colors
+
+Adjust the CSS in `base.html` to use the desired color scheme.
+
+### Step 10: Test
+
+Run the Django development server (`python manage.py runserver`) and test your application in the browser.
+
+
+### Example pk
+
+To add the primary key (pk) to `snack_list.html` and `home.html`, you need to modify the URLs in the `href` attributes to include the primary key. Since your snack model has the field name `id` as the primary key, you can use `snack.id` in the templates. Here are the modifications:
+
+### `snack_list.html`
+
+```html
+<!-- templates/snacks/snack_list.html -->
+
+{% extends "base.html" %}
+
+{% block title %}Snack List{% endblock %}
+
+{% block content %}
+  <div class="container mx-auto mt-4">
+    <h1 class="text-3xl text-blue-800">Snack List</h1>
+    <ul>
+      {% for snack in snacks %}
+        <li>
+          <a href="{% url 'snack_detail' pk=snack.id %}" class="text-blue-500 hover:underline">{{ snack.name }}</a>
+          <p class="text-gray-600">Rating: {{ snack.rating }}</p>
+          <p class="text-gray-600">Critical Description: {{ snack.critical_description }}</p>
+          <p class="text-gray-600">Purchaser: {{ snack.purchaser.username }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock content %}
+```
+
+### `home.html`
+
+```html
+<!-- templates/home.html -->
+
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Welcome to Snack Tracker</h1>
+  <p>Explore our delicious snacks and keep track of your favorites!</p>
+
+  <h2>Featured Snacks</h2>
+  {% for snack in snacks %}
+    <div>
+      <h3><a href="{% url 'snack_detail' pk=snack.id %}" class="text-periwinkle hover:underline hover:text-maroon">{{ snack.name }}</a></h3>
+      <p>{{ snack.description }}</p>
+      <p>Purchased by: {{ snack.purchaser.username }}</p>
+      <p>Rating: {{ snack.rating }}</p>
+    </div>
+  {% endfor %}
+{% endblock content %}
+```
 
