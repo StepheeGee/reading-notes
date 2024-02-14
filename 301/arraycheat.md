@@ -248,10 +248,7 @@ const sumWithInitial = array1.reduce(
   (accumulator, currentValue) => accumulator + currentValue,
   initialValue,
 );
-
-console.log(sumWithInitial);
-// Expected output: 10
- ```
+console.log(sumWithInitial); // Expected output: 10 ```
 
 
 ### String Methods:

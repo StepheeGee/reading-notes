@@ -3,8 +3,9 @@
 
 #### *10.9.23*
 
+Hey, I'm Steph. Join me on my journey of learning and mastering Software Development. I'm all in, committed to expanding my knowledge in this ever-evolving domain. Over the years, I've grasped the impact of a growth mindset in driving progress toward personal and academic goals. 
 
- Hi, I'm Steph. Welcome to the chronicles of my journey to learning Software Development. I'm committed to expanding my knowledge in this exciting domain. Over the years, I've come to understand the power of a growth mindset in achieving personal and academic goals.
+So...Let's dive in! You down?
 
 ![overwhelmed-african-american-school-girl-doing-hom-2022-12-16-06-39-38-utc (1)](https://github.com/StepheeGee/reading-notes/assets/146587839/dfe735e7-f1dd-4567-a658-365c6b754591)
 
