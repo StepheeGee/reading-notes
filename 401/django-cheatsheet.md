@@ -18,6 +18,7 @@ $ touch README.md
 $ touch .gitignore
 $ pip install django
 $ django-admin startproject django_things_project .
+
 ```
 
 ## Step 2: Run Development Server
@@ -39,6 +40,9 @@ $ python manage.py startapp things
 ```
 
 ## Step 5: Configure App in Project
+
+```pip install django-compressor
+```
 
 ### I. Edit `settings.py`
 
