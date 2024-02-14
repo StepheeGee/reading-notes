@@ -10,8 +10,10 @@
 ```bash
 $ mkdir django-things
 $ cd django-things
-$ python -m venv venv
+$ python3 -m venv .venv
 $ source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+$ touch README.md
+$ touch .gitignore
 $ pip install django
 $ django-admin startproject django_things_project .
 ```
