@@ -1,5 +1,7 @@
 # django-cheatsheet.md
 
+* don't forget to remove \'s. for markdown only. 
+
 ## Step 1: Create Django Project
 
 ```markdown
@@ -220,10 +222,11 @@ module.exports = {
 I used...
 
 ```
-import @tailwind base;
-import @tailwind components;
-import @tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 ```
+
 
 ### III. Build Tailwind CSS
 
@@ -397,3 +400,5 @@ urlpatterns = [
 ]
 ```
 
+
+don't forget to - ```pip freeze > requirements.txt```
