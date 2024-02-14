@@ -425,3 +425,172 @@ urlpatterns = [
 
 
 don't forget to - ```pip freeze > requirements.txt```
+
+
+
+## Adding Models to Django
+
+Assuming your project is named `snack_tracker_project`:
+
+### Step 1: Create Django Project
+
+```bash
+$ django-admin startproject snack_tracker_project
+$ cd snack_tracker_project
+```
+
+### Step 2: Create Snacks App
+
+```bash
+$ python manage.py startapp snacks
+```
+
+### Step 3: Update Project Settings
+
+In `snack_tracker_project/settings.py`, add `'snacks'` to `INSTALLED_APPS`:
+
+```python
+INSTALLED_APPS = [
+    # ... other apps
+    'snacks',
+]
+```
+
+### Step 4: Create Snack Model
+
+In `snacks/models.py`:
+
+```python
+# snacks/models.py
+from django.db import models
+from django.contrib.auth import get_user_model
+
+class Snack(models.Model):
+    name = models.CharField(max_length=64)
+    purchaser = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
+    description = models.TextField()
+
+    def __str__(self):
+        return self.name
+```
+
+### Step 5: Register Snack Model in Admin
+
+In `snacks/admin.py`:
+
+```python
+# snacks/admin.py
+from django.contrib import admin
+from .models import Snack
+
+admin.site.register(Snack)
+```
+
+### Step 6: Create Migrations and Migrate
+
+```bash
+$ python manage.py makemigrations
+$ python manage.py migrate
+```
+
+### Step 7: Create Superuser
+
+```bash
+$ python manage.py createsuperuser
+```
+
+Follow the prompts to create a superuser account.
+
+### Step 8: Create Snack List View
+
+In `snacks/views.py`:
+
+```python
+# snacks/views.py
+from django.views.generic import ListView
+from .models import Snack
+
+class SnackListView(ListView):
+    model = Snack
+    template_name = 'snack_list.html'
+    context_object_name = 'snacks'
+```
+
+### Step 9: Create Snack List Template
+
+Create a `templates` folder in the project root and add `base.html`:
+
+```html
+<!-- snack_tracker_project/templates/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Snack Tracker{% endblock %}</title>
+</head>
+<body>
+    <div>
+        <h1>Welcome to Snack Tracker</h1>
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
+```
+
+Now, create `snack_list.html`:
+
+```html
+<!-- snack_tracker_project/snacks/templates/snack_list.html -->
+{% extends "base.html" %}
+
+{% block title %}Snack List{% endblock %}
+
+{% block content %}
+    <h2>Snack List</h2>
+    <ul>
+        {% for snack in snacks %}
+            <li>{{ snack.name }} - {{ snack.purchaser.username }} - {{ snack.description }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+```
+
+### Step 10: Update Project URLs
+
+In `snack_tracker_project/urls.py`:
+
+```python
+# snack_tracker_project/urls.py
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('snacks.urls')),
+]
+```
+
+### Step 11: Create Snacks URLs
+
+Create a `urls.py` file in the `snacks` app folder:
+
+```python
+# snacks/urls.py
+from django.urls import path
+from .views import SnackListView
+
+urlpatterns = [
+    path('', SnackListView.as_view(), name='snack_list'),
+]
+```
+
+### Step 12: Run Development Server
+
+```bash
+$ python manage.py runserver
+```
+
+Visit `http://127.0.0.1:8000/` in your browser to see the Snack List.
+
