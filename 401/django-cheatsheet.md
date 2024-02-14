@@ -703,25 +703,25 @@ To add the primary key (pk) to `snack_list.html` and `home.html`, you need to mo
 ```html
 <!-- templates/snacks/snack_list.html -->
 
-{% extends "base.html" %}
+{\% extends "base.html" \%}
 
-{% block title %}Snack List{% endblock %}
+{\% block title \%}Snack List{\% endblock \%}
 
-{% block content %}
+{\% block content \%}
   <div class="container mx-auto mt-4">
     <h1 class="text-3xl text-blue-800">Snack List</h1>
     <ul>
-      {% for snack in snacks %}
+      {\% for snack in snacks \%}
         <li>
-          <a href="{% url 'snack_detail' pk=snack.id %}" class="text-blue-500 hover:underline">{{ snack.name }}</a>
+          <a href="{\% url 'snack_detail' pk=snack.id \%}" class="text-blue-500 hover:underline">{{ snack.name }}</a>
           <p class="text-gray-600">Rating: {{ snack.rating }}</p>
           <p class="text-gray-600">Critical Description: {{ snack.critical_description }}</p>
           <p class="text-gray-600">Purchaser: {{ snack.purchaser.username }}</p>
         </li>
-      {% endfor %}
+      {\% endfor \%}
     </ul>
   </div>
-{% endblock content %}
+{\% endblock content \%}
 ```
 
 ### `home.html`
@@ -729,21 +729,21 @@ To add the primary key (pk) to `snack_list.html` and `home.html`, you need to mo
 ```html
 <!-- templates/home.html -->
 
-{% extends "base.html" %}
+{\% extends "base.html" \%}
 
-{% block content %}
+{\% block content \%}
   <h1>Welcome to Snack Tracker</h1>
   <p>Explore our delicious snacks and keep track of your favorites!</p>
 
   <h2>Featured Snacks</h2>
-  {% for snack in snacks %}
+  {\% for snack in snacks \%}
     <div>
-      <h3><a href="{% url 'snack_detail' pk=snack.id %}" class="text-periwinkle hover:underline hover:text-maroon">{{ snack.name }}</a></h3>
+      <h3><a href="{\% url 'snack_detail' pk=snack.id \%}" class="text-periwinkle hover:underline hover:text-maroon">{{ snack.name }}</a></h3>
       <p>{{ snack.description }}</p>
       <p>Purchased by: {{ snack.purchaser.username }}</p>
       <p>Rating: {{ snack.rating }}</p>
     </div>
-  {% endfor %}
-{% endblock content %}
+  {\% endfor \%}
+{\% endblock content \%}
 ```
 
