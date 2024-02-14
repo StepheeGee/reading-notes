@@ -1,6 +1,6 @@
 # django-cheatsheet.md
 
-* don't forget to remove \'s. for markdown only. 
+* don't forget to remove \ 's. for markdown only. 
 
 ## Step 1: Create Django Project
 
