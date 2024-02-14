@@ -251,6 +251,25 @@ module.exports = {
 }
 ```
 
+tailwind.config.js should look like this now
+
+```
+tailwind.config.js
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+       './templates/**/*.html',
+       './node_modules/flowbite/**/*.js'
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [
+      require('flowbite/plugin')
+  ],
+}
+```
+
 ### Include Flowbite in `base.html`
 
 ```html
