@@ -1,3 +1,4 @@
+## Docker Cheatsheet
 
 ### Step 1: Install Docker and Docker Compose
 
@@ -180,3 +181,76 @@ docker-compose up --build
 docker info
 ```
 
+## Admin.py Cheatsheet
+
+1. Open your `mywigs/admin.py` file.
+
+2. Import the necessary models and modules:
+
+    ```python
+    from django.contrib import admin
+    from .models import Wig
+    ```
+
+3. Register your models with the admin site:
+
+    ```python
+    admin.site.register(Wig)
+    ```
+
+4. Customize the admin display for your model (optional):
+
+    ```python
+    class WigAdmin(admin.ModelAdmin):
+        list_display = ('name', 'color', 'length', 'owner', 'created_at')
+        search_fields = ('name', 'owner__username')  # Enable searching by name and owner's username
+
+    admin.site.register(Wig, WigAdmin)
+    ```
+
+   Adjust the `list_display` and `search_fields` according to your model fields.
+
+## URLs.py Cheatsheet with Authentication
+
+1. Open your `mywigs/urls.py` file.
+
+2. Import the necessary modules:
+
+    ```python
+    from django.urls import path, include
+    from rest_framework import routers
+    from .views import WigViewSet
+    ```
+
+3. Create a router and register your viewsets:
+
+    ```python
+    router = routers.DefaultRouter()
+    router.register(r'wigs', WigViewSet)
+    ```
+
+4. Include the router's URLs and authentication URLs in your urlpatterns:
+
+    ```python
+    urlpatterns = [
+        path('api/', include(router.urls)),
+        path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),  # Add authentication URLs
+    ]
+    ```
+
+   This includes the REST framework's default authentication views.
+
+5. Add authentication classes to your `WigViewSet` (optional):
+
+    ```python
+    from rest_framework.authentication import TokenAuthentication
+    from rest_framework.permissions import IsAuthenticated
+
+    class WigViewSet(viewsets.ModelViewSet):
+        authentication_classes = [TokenAuthentication]
+        permission_classes = [IsAuthenticated]
+
+        # ... your existing code ...
+    ```
+
+   This ensures that only authenticated users can access your API views.
