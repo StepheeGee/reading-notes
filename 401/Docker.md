@@ -254,3 +254,25 @@ docker info
     ```
 
    This ensures that only authenticated users can access your API views.
+6. Add to your settings
+
+```
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ),
+}
+```
+and include it in installed apps in your settings.py
+
+```'rest_framework',
+```
+
+
+
+   Don't forget to create a .dockerignore file with the following content:
+   .venv
+   venv
+    echo "pattern1" > .dockerignore
+    echo "pattern2" >> .dockerignore
