@@ -450,3 +450,53 @@ The necessary packages to install for a basic Django project with Django REST Fr
    ```
 
 These are the minimum required packages for setting up a Django project with DRF and PostgreSQL. 
+
+- run tests
+```
+docker-compose run web python manage.py test
+```
+
+- migrate in docker
+
+```
+docker-compose run web python manage.py makemigrations
+
+docker-compose run web python manage.py migrate
+```
+
+AFTER MIGRATING
+
+After running migrations using the command `docker-compose run web python manage.py migrate`, you need to follow up with the following steps:
+
+1. **Create a Superuser:**
+   If your Django project involves user authentication, create a superuser using the following command:
+
+   ```bash
+   docker-compose run web python manage.py createsuperuser
+   ```
+
+   This will prompt you to enter a username, email, and password for the superuser.
+
+2. **Collect Static Files:**
+   If your Django project involves static files (CSS, JavaScript, etc.), you need to collect them using the following command:
+
+   ```bash
+   docker-compose run web python manage.py collectstatic
+   ```
+
+   This command gathers all static files from your apps into the `STATIC_ROOT` directory, which is specified in your Django settings.
+
+3. **Run the Development Server:**
+   Start the Django development server using the following command:
+
+   ```bash
+   docker-compose up
+   ```
+
+   The development server will be accessible at http://localhost:8000/. You can use this URL to access your Django application.
+
+4. **Access the Admin Interface:**
+   If you have set up the Django admin site, you can access it at http://localhost:8000/admin/. Log in with the superuser credentials you created earlier.
+
+Now, your Django application should be up and running inside a Docker container, and you can access it through the specified URL. Ensure that the PostgreSQL service is also running and accessible.
+
